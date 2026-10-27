@@ -1,0 +1,318 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ฝึกทำข้อสอบครูผู้ช่วย</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;700&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf6f0;--c:#fff;--t:#1b1a2e;--m:#78758f;--p:#4f46e5;--a:#ff6b4a;--ok:#0f9d6b;--no:#e0364f;--b:#ece7de;--sh:0 1px 2px rgba(30,20,60,.06),0 10px 28px rgba(30,20,60,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12111d;--c:#1c1a2e;--t:#f1f0fb;--m:#9d9bbb;--p:#8b84ff;--a:#ff8466;--ok:#4cd9a0;--no:#ff8a9c;--b:#2d2b47;--sh:0 10px 28px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#12111d;--c:#1c1a2e;--t:#f1f0fb;--m:#9d9bbb;--p:#8b84ff;--a:#ff8466;--ok:#4cd9a0;--no:#ff8a9c;--b:#2d2b47;--sh:0 10px 28px rgba(0,0,0,.4)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--t);font:16px/1.65 Sarabun,system-ui,sans-serif}
+main{max-width:640px;margin:auto;padding:14px 16px 110px}
+button{font:inherit;color:var(--t);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .12s}button:active{transform:scale(.97)}button:focus-visible{outline:3px solid var(--p);outline-offset:2px}button:disabled{opacity:.35}
+.m{color:var(--m);font-size:.86rem}h2{font-size:1rem;margin:24px 2px 8px;letter-spacing:.02em}
+.hero{border-radius:26px;padding:22px;color:#fff;background:radial-gradient(circle at 85% 10%,#ff6b4a 0,transparent 45%),radial-gradient(circle at 10% 100%,#7c3aed 0,transparent 55%),#312e81;box-shadow:var(--sh);display:flex;gap:16px;align-items:center}
+.hero h1{margin:0;font-size:1.45rem;line-height:1.3}.hero p{margin:.3rem 0 0;font-size:.9rem;opacity:.9}
+.rg{flex:none;width:84px;height:84px;border-radius:50%;display:grid;place-items:center}.rg div{width:66px;height:66px;border-radius:50%;background:#312e81;display:grid;place-items:center;font-weight:700;font-size:1.1rem;line-height:1}.rg small{font-size:.6rem;font-weight:400;opacity:.8;display:block;text-align:center}
+.seg{display:flex;background:var(--b);border-radius:16px;padding:4px;margin:14px 0 0}.seg button{flex:1;border:0;background:none;border-radius:12px;padding:9px 6px;font-size:.9rem}.seg .on{background:var(--c);box-shadow:var(--sh);font-weight:700}
+.q3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.go{border:0;border-radius:18px;background:var(--c);box-shadow:var(--sh);padding:14px 8px;text-align:center}.go b{display:block;font-size:1.3rem;color:var(--a)}.go span{font-size:.8rem;color:var(--m)}
+.long{display:flex;align-items:center;gap:12px;width:100%;border:0;border-radius:18px;background:var(--c);box-shadow:var(--sh);padding:13px 14px;margin-top:10px;text-align:left}
+.sub{display:flex;gap:14px;align-items:center;width:100%;border:0;border-radius:20px;background:var(--c);box-shadow:var(--sh);padding:14px;margin:10px 0;text-align:left}
+.ic{flex:none;width:50px;height:50px;border-radius:16px;display:grid;place-items:center;font-size:1.5rem}
+.sub b{display:block;line-height:1.35}.bt{height:6px;border-radius:3px;background:var(--b);margin-top:8px;overflow:hidden}.bt i{display:block;height:100%;border-radius:3px}
+.top{display:flex;align-items:center;gap:10px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:8px 0;z-index:5}
+.ib{flex:none;border:0;background:var(--c);box-shadow:var(--sh);border-radius:12px;min-width:40px;height:40px;padding:0 10px}
+.bar{flex:1;height:8px;background:var(--b);border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--p),var(--a));transition:width .3s}
+.card{background:var(--c);border-radius:22px;padding:18px;margin:10px 0;box-shadow:var(--sh)}
+.tag{display:inline-block;border-radius:99px;padding:2px 12px;font-size:.78rem;font-weight:700;color:#fff}
+.qn{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.q{font-weight:700;font-size:1.08rem;line-height:1.6}
+.opt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;margin:10px 0;border:2px solid var(--b);background:var(--c);border-radius:18px;padding:12px 14px}
+.l{flex:none;width:30px;height:30px;border-radius:10px;display:grid;place-items:center;background:var(--b);font-weight:700;font-size:.9rem}
+.opt.on{border-color:var(--p)}.opt.on .l{background:var(--p);color:#fff}
+.opt.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,var(--c))}.opt.ok .l{background:var(--ok);color:#fff}
+.opt.bad{border-color:var(--no);background:color-mix(in srgb,var(--no) 14%,var(--c))}.opt.bad .l{background:var(--no);color:#fff}
+.dock{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--b);z-index:6}
+.dock div{max-width:640px;margin:auto;display:flex;gap:10px}.dock button{flex:1;border:2px solid var(--b);background:var(--c);border-radius:16px;padding:13px}
+.pri{background:linear-gradient(135deg,var(--p),var(--a))!important;color:#fff!important;border:0!important;font-weight:700}
+.btn{display:block;width:100%;border:2px solid var(--b);background:var(--c);border-radius:16px;padding:13px;margin:10px 0}
+.pal{position:fixed;inset:0;background:rgba(10,8,25,.55);z-index:20;display:flex;align-items:flex-end}.pal>div{background:var(--bg);width:100%;max-width:640px;margin:auto;border-radius:24px 24px 0 0;padding:18px 16px calc(24px + env(safe-area-inset-bottom,0px));max-height:70%;overflow:auto}
+.g{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:10px}.g button{border:2px solid var(--b);background:var(--c);border-radius:12px;padding:8px 0}.g .d{background:var(--p);color:#fff;border-color:var(--p)}.g .ok{background:var(--ok);color:#fff;border-color:var(--ok)}.g .bad{background:var(--no);color:#fff;border-color:var(--no)}.g .cur{outline:3px solid var(--a)}
+.res{text-align:center}.res .rg{width:150px;height:150px;margin:6px auto}.res .rg div{width:118px;height:118px;background:var(--c);color:var(--t);font-size:2.1rem}.res .rg small{font-size:.8rem;color:var(--m)}
+.st{display:flex;gap:8px;margin-top:12px}.st div{flex:1;background:var(--bg);border-radius:14px;padding:8px}.st b{display:block;font-size:1.15rem}
+.tabs{display:flex;gap:8px;margin:16px 0 4px}.tabs button{flex:1;border:2px solid var(--b);background:var(--c);border-radius:99px;padding:7px 4px;font-size:.85rem}.tabs .on{border-color:var(--p);color:var(--p);font-weight:700}
+.ok{color:var(--ok)}.no{color:var(--no)}.rv{padding:6px 10px;border-radius:10px;margin:4px 0;font-size:.95rem}.rv.a{background:color-mix(in srgb,var(--ok) 18%,var(--c));font-weight:700}.rv.w{background:color-mix(in srgb,var(--no) 18%,var(--c))}
+.fade{animation:f .3s}@keyframes f{from{opacity:0;transform:translateY(8px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.cn{width:100%;display:flex;gap:8px}.dock .cn button{padding:8px 0;border-radius:12px;font-size:.92rem}.dock .cn button.on{border-color:var(--p);background:color-mix(in srgb,var(--p) 14%,var(--c));font-weight:700}.cn input{flex:1.4;min-width:0;border:2px solid var(--b);border-radius:12px;background:var(--c);color:var(--t);font:inherit;padding:6px 8px;text-align:center}.cn input:focus{outline:3px solid var(--p);outline-offset:1px}.gh{display:flex;align-items:center;justify-content:space-between}.gh .ib{height:32px;font-size:.8rem}
+
+/* ===== ธีมใหม่: นีออนมืด ===== */
+:root,:root:not([data-theme="light"]),:root[data-theme="dark"]{--bg:#07080f;--c:#10121f;--t:#eef1ff;--m:#8a90b2;--p:#22d3ee;--a:#e879f9;--ok:#34f5a4;--no:#ff5d7a;--b:#23263d;--on:#06121a;--sh:0 0 0 1px rgba(255,255,255,.05),0 12px 30px rgba(0,0,0,.45)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef1fb;--c:#fff;--t:#0b0e24;--m:#5b6285;--p:#6d28d9;--a:#e11d8a;--ok:#0f9d6b;--no:#e0364f;--b:#dde1f3;--on:#fff;--sh:0 1px 2px rgba(30,20,60,.06),0 10px 28px rgba(30,20,60,.1)}}
+:root[data-theme="light"]{--bg:#eef1fb;--c:#fff;--t:#0b0e24;--m:#5b6285;--p:#6d28d9;--a:#e11d8a;--ok:#0f9d6b;--no:#e0364f;--b:#dde1f3;--on:#fff;--sh:0 1px 2px rgba(30,20,60,.06),0 10px 28px rgba(30,20,60,.1)}
+body{background:radial-gradient(60% 40% at 92% -5%,color-mix(in srgb,var(--p) 24%,transparent),transparent),radial-gradient(50% 35% at -8% 45%,color-mix(in srgb,var(--a) 16%,transparent),transparent),var(--bg);background-attachment:fixed}
+h1,h2,.go b,.rg,.tag,.pri,.top b,.l{font-family:Prompt,Sarabun,system-ui,sans-serif}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0e7490,#6d28d9 55%,#be185d);border:1px solid rgba(255,255,255,.2);box-shadow:0 18px 50px color-mix(in srgb,var(--a) 28%,transparent)}
+.hero::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.06) 0 2px,transparent 2px 14px);pointer-events:none}
+.hero>*{position:relative;z-index:1}.hero h1{text-shadow:0 2px 18px rgba(0,0,0,.35)}.rg div{background:#0b0d1c}
+.go,.sub,.long,.card{border:1px solid color-mix(in srgb,var(--t) 9%,transparent)}
+.go b{font-size:1.55rem;background:linear-gradient(135deg,var(--p),var(--a));-webkit-background-clip:text;background-clip:text;color:transparent}
+.go:hover,.sub:hover,.long:hover{border-color:var(--p);box-shadow:0 0 0 1px var(--p),0 10px 30px color-mix(in srgb,var(--p) 26%,transparent)}
+h2{display:flex;align-items:center;gap:8px;font-size:.95rem}h2::before{content:"";width:4px;height:1.1em;border-radius:2px;background:linear-gradient(var(--p),var(--a))}
+.ic{border:1px solid color-mix(in srgb,var(--t) 12%,transparent)}
+.bt{height:5px}.bt i{box-shadow:0 0 8px rgba(255,255,255,.3)}
+.seg{border:1px solid var(--b)}.seg .on{background:linear-gradient(135deg,color-mix(in srgb,var(--p) 30%,var(--c)),color-mix(in srgb,var(--a) 24%,var(--c)))}
+.pri{background:linear-gradient(135deg,var(--p),#8b5cf6 55%,var(--a))!important;color:var(--on)!important;box-shadow:0 8px 26px color-mix(in srgb,var(--p) 40%,transparent)}
+.tag{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.45)}.q{font-size:1.1rem}
+.opt.on{box-shadow:0 0 0 3px color-mix(in srgb,var(--p) 22%,transparent)}.opt.on .l{color:var(--on)}.opt.ok .l,.opt.bad .l{color:var(--on)}
+.opt.ok{box-shadow:0 0 18px color-mix(in srgb,var(--ok) 28%,transparent)}.opt.bad{box-shadow:0 0 18px color-mix(in srgb,var(--no) 26%,transparent)}
+.bar i{box-shadow:0 0 12px color-mix(in srgb,var(--p) 70%,transparent)}
+.dock{border-top:1px solid color-mix(in srgb,var(--p) 30%,var(--b))}.pal>div{border:1px solid var(--b)}
+.swal2-popup{background:var(--c)!important;color:var(--t)!important;border:1px solid var(--b);border-radius:24px!important;font-family:Sarabun,system-ui,sans-serif!important}
+.swal2-title{color:var(--t)!important;font-family:Prompt,Sarabun,sans-serif!important;font-size:1.3rem!important}
+.swal2-html-container{color:var(--m)!important;font-size:1rem!important}
+.swal2-styled.swal2-confirm{background:linear-gradient(135deg,var(--p),var(--a))!important;color:var(--on)!important;border-radius:14px!important;font-weight:700;box-shadow:none!important}
+.swal2-styled.swal2-cancel{background:var(--b)!important;color:var(--t)!important;border-radius:14px!important;box-shadow:none!important}
+.swal2-toast{background:var(--c)!important;color:var(--t)!important;border:1px solid var(--b)}
+.swal2-container{z-index:9999!important}
+.aqi{width:100%;box-sizing:border-box;border:2px solid var(--b);background:var(--bg);color:var(--t);border-radius:12px;padding:9px 11px;font:inherit;font-size:.95rem;margin:4px 0 10px}
+.aqi:focus{outline:none;border-color:var(--p)}textarea.aqi{min-height:190px;font:.82rem/1.5 ui-monospace,Menlo,Consolas,monospace;resize:vertical;white-space:pre}
+.aql{display:block;text-align:left;font-size:.85rem;color:var(--m);font-weight:700}
+</style></head><body><main id="app"></main>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+<script src="exam-data.js"></script>
+<script>
+if(!window.BASE){document.getElementById('app').innerHTML='<div style="padding:24px;font:16px sans-serif">ไม่พบไฟล์ <b>exam-data.js</b> — วางไว้โฟลเดอร์เดียวกับ index.html</div>';if(window.Swal)Swal.fire({icon:'error',title:'โหลดข้อสอบไม่สำเร็จ',html:'ไม่พบไฟล์ <b>exam-data.js</b><br>วางไว้โฟลเดอร์เดียวกับ index.html แล้วรีเฟรชหน้า',confirmButtonText:'รีเฟรช'}).then(()=>location.reload());throw new Error('exam-data.js missing')}
+const S=[...BASE.S],Q=[...BASE.Q];
+const IC=[...BASE.IC],CL=[...BASE.CL],L=['ก','ข','ค','ง','จ'];
+// ต่อชุดเพิ่มเติม (EXTRA) จาก exam-data.js ต่อท้าย S/Q เพื่อให้ความคืบหน้าเดิมไม่เพี้ยน
+try{(window.EXTRA||[]).forEach(b=>{let k;if(b.to!=null){k=b.to;if(!(k>=0&&k<S.length))return}else{k=S.length;S.push(b.name);IC.push(b.icon||'📝');CL.push(b.color||'#6c5ce7')}b.q.forEach(q=>Q.push([k,q[0],q[1],q[2]]))})}catch(e){}
+const S0=[...S],MT=Object.assign({names:{},order:[]},window.META||{});
+Object.keys(MT.names||{}).forEach(k=>{if(S[k]!=null&&String(MT.names[k]).trim())S[k]=MT.names[k]});
+const OS=()=>{const o=(MT.order||[]).filter((k,i,a)=>k>=0&&k<S.length&&a.indexOf(k)==i);S.forEach((s,k)=>{if(!o.includes(k))o.push(k)});return o};
+const A=document.getElementById('app'),sh=a=>[...a].sort(()=>Math.random()-.5);
+const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+let M=new Set(ld('ktm',[])),BK=new Set(ld('ktbk',[])),mode=ld('ktmode','now'),qs=[],an=[],i=0,t0=0,tm=0,flt=0,pal=0,tt=0;
+const ids=f=>Q.map((q,k)=>k).filter(f),mmss=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+const stop=()=>clearInterval(tm);
+// SweetAlert2 (ถ้าโหลดไม่ได้ จะ fallback เป็น confirm ปกติ)
+const cf=(title,text,ok,icon)=>window.Swal?Swal.fire({title,text,icon:icon||'question',showCancelButton:true,confirmButtonText:ok||'ตกลง',cancelButtonText:'ยกเลิก',reverseButtons:true,focusCancel:true}).then(r=>r.isConfirmed):Promise.resolve(confirm(title+(text?'\n'+text:'')));
+const al=(title,text,icon)=>window.Swal?Swal.fire({title,html:text,icon:icon||'info',confirmButtonText:'ตกลง'}):(alert(title+(text?'\n'+String(text).replace(/<[^>]+>/g,''):'')),Promise.resolve());
+const toast=(t,icon)=>{if(window.Swal)Swal.fire({toast:true,position:'top',icon:icon||'success',title:t,showConfirmButton:false,timer:1400,timerProgressBar:true})};
+const G=6,H=17;
+function row(k){const s=S[k].replace(/^ภาษาไทย · /,'');const a=ids(j=>Q[j][0]==k),d=a.filter(j=>M.has(j)).length;return `<button class="sub fade" onclick="go(ids(j=>Q[j][0]==${k}))"><span class="ic" style="background:${CL[k]}22">${IC[k]}</span><span style="flex:1"><b>${s}</b><span class="m">ถูกแล้ว ${d}/${a.length} ข้อ</span><div class="bt"><i style="width:${d/a.length*100}%;background:${CL[k]}"></i></div></span></button>`}
+function setMode(m){mode=m;sv('ktmode',mode);home();toast(m=='now'?'⚡ เฉลยทันทีหลังตอบแต่ละข้อ':'📝 เฉลยตอนท้ายชุด','info')}
+
+// ===== เพิ่มข้อสอบ: วางรูปแบบ JS แล้วบันทึกลง exam-data.js =====
+let FH=null;
+function aqParse(txt){let r;
+ try{r=new Function('"use strict";return ['+txt+'\n]')()}catch(e){throw new Error('อ่านรูปแบบไม่ได้: '+e.message)}
+ if(r.length==1&&Array.isArray(r[0])&&Array.isArray(r[0][0])&&Array.isArray(r[0][0][1]))r=r[0];
+ if(!r.length)throw new Error('ยังไม่ได้ใส่ข้อสอบ');
+ r.forEach((x,n)=>{const e=m=>{throw new Error('ข้อที่ '+(n+1)+': '+m)};
+  if(!Array.isArray(x)||x.length<3)e('ต้องเป็น ["โจทย์", ["ตัวเลือก",...], ข้อที่ถูก]');
+  if(typeof x[0]!='string'||!x[0].trim())e('โจทย์ว่าง');
+  if(!Array.isArray(x[1])||x[1].length<2||x[1].length>5||x[1].some(o=>typeof o!='string'||!o.trim()))e('ตัวเลือกต้องมี 2–5 ข้อ และเป็นข้อความ');
+  if(!Number.isInteger(x[2])||x[2]<0||x[2]>=x[1].length)e('ข้อที่ถูกต้องเป็นเลข 0–'+(x[1].length-1)+' (0=ก 1=ข 2=ค 3=ง 4=จ)')});
+ return r.map(x=>[x[0],x[1],x[2]])}
+function aqPieces(mode,meta,rows){return aqSet(mode=='new'?{name:meta.name,icon:meta.icon,color:meta.color,q:rows}:{to:meta.to,q:rows})}
+function aqBuild(t,mode,meta,rows){
+ if(!/window\.EXTRA\s*=\s*\[/.test(t))throw new Error('ไม่พบ window.EXTRA ในไฟล์');
+ const m=t.match(/\]\s*;\s*$/);
+ if(!m)throw new Error('ท้ายไฟล์ไม่ตรงโครงสร้างที่คาดไว้ (ต้องจบด้วย ];)');
+ const head=t.slice(0,m.index).trimEnd().replace(/,$/,'');
+ return head+(/\[$/.test(head)?'\n':',\n')+aqPieces(mode,meta,rows)+'\n];\n'}
+async function aqFallback(mode,meta,rows,why){
+ const snip=',\n'+aqPieces(mode,meta,rows);
+ const how='เปิด <b>exam-data.js</b> → วางต่อท้าย <b>}</b> ของชุดสุดท้าย ก่อน <b>];</b> ท้ายไฟล์';
+ const r=await Swal.fire({icon:'info',title:'คัดลอกไปวางในไฟล์เอง',width:640,showCancelButton:true,confirmButtonText:'📋 คัดลอก',cancelButtonText:'ปิด',
+  html:'<div style="text-align:left;font-size:.9rem">'+(why?'<div style="color:var(--no);margin-bottom:6px">'+why+'</div>':'')+'เบราว์เซอร์นี้เขียนไฟล์ตรงๆ ไม่ได้ (ใช้ Chrome/Edge บนคอมจะบันทึกอัตโนมัติ)<br>'+how+'<textarea id="aq-o" class="aqi" readonly style="margin-top:8px">'+snip.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</textarea></div>'});
+ if(r.isConfirmed){try{await navigator.clipboard.writeText(snip);toast('คัดลอกแล้ว 📋')}catch(e){const a=document.getElementById('aq-o');al('คัดลอกเอง','แตะในกล่องข้อความ เลือกทั้งหมด แล้วคัดลอก','info')}}}
+async function addQ(){
+ const opts=S.map((n,k)=>'<option value="'+k+'">เพิ่มเข้าชุด: '+String(n).replace(/</g,'&lt;')+' ('+ids(j=>Q[j][0]==k).length+' ข้อ)</option>').join('');
+ const ex='["โจทย์ข้อที่ 1", ["ตัวเลือก ก", "ตัวเลือก ข", "ตัวเลือก ค", "ตัวเลือก ง"], 2],\n["โจทย์ข้อที่ 2", ["ก", "ข", "ค", "ง"], 0],';
+ const r=await Swal.fire({title:'➕ เพิ่มข้อสอบ',width:640,showCancelButton:true,confirmButtonText:'บันทึกลงไฟล์',cancelButtonText:'ยกเลิก',focusConfirm:false,
+  html:'<div style="text-align:left"><label class="aql">เพิ่มไปที่</label><select id="aq-m" class="aqi" onchange="document.getElementById(\'aq-nw\').style.display=this.value==\'new\'?\'block\':\'none\'"><option value="new">➕ สร้างชุดใหม่</option>'+opts+'</select>'
+  +'<div id="aq-nw"><label class="aql">ชื่อชุด</label><input id="aq-n" class="aqi" placeholder="เช่น วิชาภาษาไทย ชุดที่ 11"><div style="display:flex;gap:10px"><div style="flex:1"><label class="aql">ไอคอน</label><input id="aq-i" class="aqi" value="📝"></div><div style="flex:1"><label class="aql">สี</label><input id="aq-c" type="color" class="aqi" value="#6c5ce7" style="height:42px;padding:3px"></div></div></div>'
+  +'<label class="aql">ข้อสอบ (แถวละข้อ · ข้อที่ถูกนับจาก 0: 0=ก 1=ข 2=ค 3=ง 4=จ)</label><textarea id="aq-t" class="aqi" spellcheck="false" placeholder="'+ex.replace(/"/g,'&quot;')+'"></textarea></div>',
+  preConfirm:()=>{try{const g=id=>document.getElementById(id).value,mode=g('aq-m'),meta={name:g('aq-n').trim(),icon:g('aq-i').trim()||'📝',color:g('aq-c')||'#6c5ce7'};
+   if(mode=='new'&&!meta.name)throw new Error('ใส่ชื่อชุดก่อน');const to=mode=='new'?null:+mode;if(to!==null)meta.to=to;return{mode:to===null?'new':'add',meta,rows:aqParse(g('aq-t'))}}catch(e){Swal.showValidationMessage(e.message);return false}}});
+ if(!r.isConfirmed)return;
+ const{mode,meta,rows}=r.value;
+ if(ld('ktgh','')){try{await ghSave(t=>aqBuild(t,mode,meta,rows),'เพิ่มข้อสอบ '+rows.length+' ข้อ');await Swal.fire({icon:'success',title:'บันทึกขึ้น GitHub แล้ว ✅',text:GHNOTE+' (ข้อสอบใหม่จะโผล่หลังจากนั้น)',confirmButtonText:'ตกลง'})}catch(e){aqFallback(mode,meta,rows,'บันทึกขึ้น GitHub ไม่สำเร็จ: '+(e.message||e))}return}
+ if(!window.showOpenFilePicker)return aqFallback(mode,meta,rows);
+ try{
+  if(!FH){await Swal.fire({icon:'info',title:'เลือกไฟล์ exam-data.js',text:'เลือกไฟล์ exam-data.js ตัวที่ใช้กับหน้านี้ แล้วกด "แก้ไขไฟล์" เมื่อเบราว์เซอร์ถาม',confirmButtonText:'เลือกไฟล์'});
+   [FH]=await showOpenFilePicker({types:[{description:'exam-data.js',accept:{'text/javascript':['.js']}}]})}
+  if(FH.name!='exam-data.js'){const n=FH.name;FH=null;throw new Error('ไฟล์ที่เลือกชื่อ '+n+' (ต้องเป็น exam-data.js)')}
+  if(await FH.requestPermission({mode:'readwrite'})!='granted'){FH=null;throw new Error('ไม่ได้รับอนุญาตให้แก้ไขไฟล์')}
+  const t=await(await FH.getFile()).text(),n=aqBuild(t,mode,meta,rows);
+  new Function(n);
+  const w=await FH.createWritable();await w.write(n);await w.close();
+  await Swal.fire({icon:'success',title:'บันทึกแล้ว ✅',text:'เพิ่ม '+rows.length+' ข้อ ลงใน exam-data.js · หน้าจะรีเฟรชเพื่อโหลดข้อสอบใหม่',confirmButtonText:'ตกลง'});
+  location.reload()
+ }catch(e){if(e&&e.name=='AbortError')return;aqFallback(mode,meta,rows,'บันทึกอัตโนมัติไม่สำเร็จ: '+(e.message||e))}}
+
+// ===== การจัดการ: ใส่รหัส 6 หลัก → เพิ่ม/ลบชุดข้อสอบ =====
+const MPIN='542544';
+function aqSet(b){return '{\n'+(b.to!=null?'  to:'+b.to+',\n':'  name:'+JSON.stringify(b.name)+',\n  icon:'+JSON.stringify(b.icon||'📝')+',\n  color:'+JSON.stringify(b.color||'#6c5ce7')+',\n')+'  q:[\n'+b.q.map(x=>'    '+JSON.stringify(x)).join(',\n')+'\n  ]\n}'}
+function aqExtraText(arr){return 'window.EXTRA=[\n'+arr.map(aqSet).join(',\n')+(arr.length?'\n':'')+'];\n'}
+// ลบชุด k: ลบรายการที่สร้างชุดนั้น + รายการที่เพิ่มเข้าชุดนั้น และเลื่อนเลขชุดที่อยู่หลังขึ้น 1
+function aqDrop(cur,k,nb,name){
+ let n=-1,p=-1;cur.forEach((b,i)=>{if(b.to==null){n++;if(n==k-nb)p=i}});
+ if(p<0||cur[p].name!==name)throw new Error('ไม่พบชุดนี้ในไฟล์ (ไฟล์อาจไม่ตรงกับที่โหลดอยู่ ลองรีเฟรชแล้วทำใหม่)');
+ return cur.filter((b,i)=>i!=p&&b.to!==k).map(b=>b.to!=null&&b.to>k?Object.assign({},b,{to:b.to-1}):b)}
+function aqRemove(t,k,nb,name){
+ const m=t.match(/window\.EXTRA\s*=\s*\[/);if(!m)throw new Error('ไม่พบ window.EXTRA ในไฟล์');
+ let cur;try{cur=new Function('window',t+'\n;return window.EXTRA')({})}catch(x){throw new Error('อ่าน exam-data.js ไม่ได้: '+x.message)}
+ if(!Array.isArray(cur))throw new Error('อ่าน window.EXTRA ไม่ได้');
+ let out=t.slice(0,m.index)+aqExtraText(aqDrop(cur,k,nb,name));
+ const mm=metaGet(out);if(Object.keys(mm.names).length||mm.order.length)out=metaSet(out,metaDrop(mm,k));
+ return out}
+function remapAfterDelete(k){
+ const nw=[];let c=0;Q.forEach((q,j)=>{if(q[0]==k)nw.push(-1);else nw.push(c++)});
+ const f=j=>nw[j]===undefined?-1:nw[j],g=j=>j<k?j:j>k?j-1:-1;
+ sv('ktm',[...M].map(f).filter(j=>j>=0));sv('ktbk',[...BK].map(f).filter(j=>j>=0));sv('ktcs',[...cs].map(g).filter(j=>j>=0))}
+async function manage(){
+ if(!window.Swal){if(prompt('ใส่รหัส 6 หลัก')===MPIN)return addQ();return}
+ const p=await Swal.fire({title:'🔒 การจัดการ',text:'ใส่รหัส 6 หลักเพื่อเข้าใช้งาน',input:'password',inputAttributes:{inputmode:'numeric',maxlength:6,autocomplete:'off',autocapitalize:'off'},showCancelButton:true,confirmButtonText:'ยืนยัน',cancelButtonText:'ยกเลิก',inputValidator:v=>v===MPIN?undefined:(String(v).length<6?'ใส่รหัสให้ครบ 6 หลัก':'รหัสไม่ถูกต้อง')});
+ if(!p.isConfirmed)return;
+ const bt=(f,l)=>'<button class="btn" style="margin:0" onclick="Swal.close();setTimeout('+f+',0)">'+l+'</button>';
+ await Swal.fire({title:'⚙️ การจัดการ',showConfirmButton:false,showCancelButton:true,cancelButtonText:'ปิด',html:'<div style="display:flex;flex-direction:column;gap:8px">'+bt('addQ','➕ เพิ่มชุดข้อสอบใหม่')+bt('renameSet','✏️ แก้ไขชื่อชุดข้อสอบ')+bt('orderSets','↕️ จัดลำดับชุดข้อสอบ')+bt('delSet','🗑️ ลบชุดข้อสอบ')+bt('ghSet','🔗 เชื่อม GitHub (บันทึกขึ้น repo)')+'</div>'})}
+async function delSet(){
+ const nb=BASE.S.length,ks=S.map((n,k)=>k).filter(k=>k>=nb);
+ if(!ks.length)return al('ยังไม่มีชุดที่ลบได้','ลบได้เฉพาะชุดที่สร้างผ่านเมนูการจัดการ','info');
+ const opts={};ks.forEach(k=>opts[k]=S[k]+' · '+ids(j=>Q[j][0]==k).length+' ข้อ');
+ const r=await Swal.fire({title:'🗑️ ลบชุดข้อสอบ',text:'เลือกชุดที่ต้องการลบ',input:'select',inputOptions:opts,inputPlaceholder:'เลือกชุดข้อสอบ',showCancelButton:true,confirmButtonText:'ถัดไป',cancelButtonText:'ยกเลิก',inputValidator:v=>v===''?'เลือกชุดก่อน':undefined});
+ if(!r.isConfirmed)return;
+ const k=+r.value,name=S[k],oname=S0[k],cnt=ids(j=>Q[j][0]==k).length;
+ if(!await cf('ลบ “'+name+'” ?',cnt+' ข้อ จะถูกลบออกจาก exam-data.js และความคืบหน้าของชุดนี้จะหายไป ย้อนกลับไม่ได้','ลบเลย','warning'))return;
+ const fb=async why=>{let txt;try{txt=(Object.keys(MT.names||{}).length||(MT.order||[]).length?'window.META='+JSON.stringify(metaDrop(MT,k))+';//META\n':'')+aqExtraText(aqDrop(window.EXTRA||[],k,nb,oname))}catch(x){return al('ลบไม่สำเร็จ',x.message,'error')}
+  const r2=await Swal.fire({icon:'info',title:'แก้ไฟล์เอง',width:640,showCancelButton:true,confirmButtonText:'📋 คัดลอก',cancelButtonText:'ปิด',html:'<div style="text-align:left;font-size:.9rem">'+(why?'<div style="color:var(--no);margin-bottom:6px">'+why+'</div>':'')+'เปิด <b>exam-data.js</b> → แทนที่ตั้งแต่ <b>window.EXTRA</b> จนจบไฟล์ ด้วยข้อความนี้<textarea id="aq-o" class="aqi" readonly style="margin-top:8px">'+txt.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</textarea></div>'});
+  if(r2.isConfirmed){try{await navigator.clipboard.writeText(txt);toast('คัดลอกแล้ว 📋')}catch(x){al('คัดลอกเอง','แตะในกล่องข้อความ เลือกทั้งหมด แล้วคัดลอก','info')}}};
+ if(!window.showOpenFilePicker)return fb();
+ try{
+  if(!FH){await Swal.fire({icon:'info',title:'เลือกไฟล์ exam-data.js',text:'เลือกไฟล์ exam-data.js ตัวที่ใช้กับหน้านี้ แล้วกด "แก้ไขไฟล์" เมื่อเบราว์เซอร์ถาม',confirmButtonText:'เลือกไฟล์'});
+   [FH]=await showOpenFilePicker({types:[{description:'exam-data.js',accept:{'text/javascript':['.js']}}]})}
+  if(FH.name!='exam-data.js'){const n=FH.name;FH=null;throw new Error('ไฟล์ที่เลือกชื่อ '+n+' (ต้องเป็น exam-data.js)')}
+  if(await FH.requestPermission({mode:'readwrite'})!='granted'){FH=null;throw new Error('ไม่ได้รับอนุญาตให้แก้ไขไฟล์')}
+  const t=await(await FH.getFile()).text(),n=aqRemove(t,k,nb,oname);
+  new Function(n);
+  const w=await FH.createWritable();await w.write(n);await w.close();
+  remapAfterDelete(k);
+  await Swal.fire({icon:'success',title:'ลบแล้ว ✅',text:'ลบชุด “'+name+'” ออกจาก exam-data.js · หน้าจะรีเฟรช',confirmButtonText:'ตกลง'});
+  location.reload()
+ }catch(x){if(x&&x.name=='AbortError')return;fb('ลบอัตโนมัติไม่สำเร็จ: '+(x.message||x))}}
+// ===== เปลี่ยนชื่อ / จัดลำดับชุดข้อสอบ + บันทึกขึ้น GitHub =====
+const GH={repo:'ZEROXGCK/assistanttest',path:'exam-data.js',br:'main'};
+const GHNOTE='คอมมิตลง exam-data.js ใน GitHub แล้ว · ถ้าเปิดผ่าน GitHub Pages ให้รอประมาณ 1–2 นาทีแล้วรีเฟรชหน้า จึงจะเห็นผลบนทุกเครื่อง';
+const ghH=(tk,a)=>({'Authorization':'Bearer '+tk,'Accept':a||'application/vnd.github+json'});
+async function ghReq(tk,url,opt){const r=await fetch(url,Object.assign({headers:ghH(tk),cache:'no-store'},opt));if(!r.ok){let m='';try{m=(await r.json()).message}catch(e){}const e=new Error('GitHub '+r.status+(m?' · '+m:''));e.status=r.status;throw e}return r.json()}
+const b64d=s=>new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g,'')),c=>c.charCodeAt(0)));
+const b64e=s=>{const u=new TextEncoder().encode(s);let b='';for(let i=0;i<u.length;i+=8192)b+=String.fromCharCode.apply(null,u.subarray(i,i+8192));return btoa(b)};
+async function ghSave(fn,msg){const tk=ld('ktgh','');if(!tk)throw new Error('ยังไม่ได้เชื่อม GitHub');
+ const url='https://api.github.com/repos/'+GH.repo+'/contents/'+GH.path;
+ const j=await ghReq(tk,url+'?ref='+GH.br);let text;
+ if(j.content&&j.encoding=='base64')text=b64d(j.content);
+ else{const r=await fetch(url+'?ref='+GH.br,{headers:ghH(tk,'application/vnd.github.raw+json'),cache:'no-store'});if(!r.ok)throw new Error('GitHub '+r.status);text=await r.text()}
+ const n=fn(text);new Function(n);
+ await ghReq(tk,url,{method:'PUT',headers:Object.assign(ghH(tk),{'Content-Type':'application/json'}),body:JSON.stringify({message:msg,content:b64e(n),sha:j.sha,branch:GH.br})});
+ return n}
+// META = ชื่อที่แก้ + ลำดับการแสดง เก็บเป็นบรรทัดเดียวใน exam-data.js (อยู่เหนือ window.EXTRA)
+function metaGet(t){const a=[...t.matchAll(/^window\.META=(.*);\/\/META[ \t]*\r?$/gm)];const d={names:{},order:[]};if(!a.length)return d;try{return Object.assign(d,JSON.parse(a[a.length-1][1]))}catch(e){return d}}
+function metaSet(t,meta){const line='window.META='+JSON.stringify({names:meta.names||{},order:meta.order||[]})+';//META\n';
+ t=t.replace(/^window\.META=.*;\/\/META[ \t]*\r?$\n?/gm,'');
+ const m=t.match(/window\.EXTRA\s*=\s*\[/);if(!m)throw new Error('ไม่พบ window.EXTRA ในไฟล์');
+ return t.slice(0,m.index)+line+t.slice(m.index)}
+function metaDrop(meta,k){const names={};Object.keys(meta.names||{}).forEach(x=>{x=+x;if(x==k)return;names[x>k?x-1:x]=meta.names[x]});
+ return{names,order:(meta.order||[]).filter(x=>x!=k).map(x=>x>k?x-1:x)}}
+async function pickFH(){
+ if(!FH){await Swal.fire({icon:'info',title:'เลือกไฟล์ exam-data.js',text:'เลือกไฟล์ exam-data.js ตัวที่ใช้กับหน้านี้ แล้วกด "แก้ไขไฟล์" เมื่อเบราว์เซอร์ถาม',confirmButtonText:'เลือกไฟล์'});
+  [FH]=await showOpenFilePicker({types:[{description:'exam-data.js',accept:{'text/javascript':['.js']}}]})}
+ if(FH.name!='exam-data.js'){const n=FH.name;FH=null;throw new Error('ไฟล์ที่เลือกชื่อ '+n+' (ต้องเป็น exam-data.js)')}
+ if(await FH.requestPermission({mode:'readwrite'})!='granted'){FH=null;throw new Error('ไม่ได้รับอนุญาตให้แก้ไขไฟล์')}}
+async function saveMeta(meta,msg){
+ const fn=t=>metaSet(t,meta);
+ const apply=()=>{MT.names=meta.names;MT.order=meta.order;S.forEach((s,k)=>{const v=meta.names[k];S[k]=v!=null&&String(v).trim()?v:S0[k]});home()};
+ const man=async why=>{const txt='window.META='+JSON.stringify({names:meta.names,order:meta.order})+';//META';
+  const r2=await Swal.fire({icon:'info',title:'แก้ไฟล์เอง',width:640,showCancelButton:true,confirmButtonText:'📋 คัดลอก',cancelButtonText:'ปิด',html:'<div style="text-align:left;font-size:.9rem">'+(why?'<div style="color:var(--no);margin-bottom:6px">'+why+'</div>':'')+'เปิด <b>exam-data.js</b> → วางบรรทัดนี้ไว้เหนือ <b>window.EXTRA</b> (ลบบรรทัด <b>window.META</b> เดิมออกถ้ามี)<textarea id="aq-o" class="aqi" readonly style="margin-top:8px">'+txt.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</textarea></div>'});
+  if(r2.isConfirmed){try{await navigator.clipboard.writeText(txt);toast('คัดลอกแล้ว 📋')}catch(x){al('คัดลอกเอง','แตะในกล่องข้อความ เลือกทั้งหมด แล้วคัดลอก','info')}}};
+ if(ld('ktgh','')){try{await ghSave(fn,msg);apply();await Swal.fire({icon:'success',title:'บันทึกขึ้น GitHub แล้ว ✅',text:GHNOTE,confirmButtonText:'ตกลง'});return}catch(e){return man('บันทึกขึ้น GitHub ไม่สำเร็จ: '+(e.message||e))}}
+ if(window.showOpenFilePicker){try{await pickFH();const t=await(await FH.getFile()).text(),n=fn(t);new Function(n);const w=await FH.createWritable();await w.write(n);await w.close();apply();await Swal.fire({icon:'success',title:'บันทึกแล้ว ✅',text:'บันทึกลง exam-data.js แล้ว',confirmButtonText:'ตกลง'});return}catch(e){if(e&&e.name=='AbortError')return;return man('บันทึกอัตโนมัติไม่สำเร็จ: '+(e.message||e))}}
+ return man('')}
+async function ghSet(){
+ const has=!!ld('ktgh','');
+ const r=await Swal.fire({title:'🔗 เชื่อม GitHub',width:560,showCancelButton:true,showDenyButton:has,confirmButtonText:'ทดสอบและบันทึก',denyButtonText:'ลบโทเคน',cancelButtonText:'ปิด',
+  html:'<div style="text-align:left;font-size:.88rem;line-height:1.6">'+(has?'<div style="color:var(--ok);margin-bottom:6px">✅ เชื่อมแล้ว — ใส่โทเคนใหม่เพื่อเปลี่ยน</div>':'')+'บันทึกลง <b>'+GH.repo+'/'+GH.path+'</b> ตรงๆ<br>1) GitHub → Settings → Developer settings → <b>Fine-grained tokens</b> → Generate<br>2) เลือก repo <b>assistanttest</b> เท่านั้น · Permissions: <b>Contents = Read and write</b><br>3) คัดลอกโทเคนมาวางด้านล่าง<br><span class="m">โทเคนเก็บในเบราว์เซอร์เครื่องนี้เท่านั้น ไม่ได้ฝังในโค้ด</span><input id="gh-t" type="password" class="aqi" autocomplete="off" placeholder="github_pat_..." style="margin-top:8px"></div>',
+  preConfirm:async()=>{const v=document.getElementById('gh-t').value.trim();if(!v){Swal.showValidationMessage('วางโทเคนก่อน');return false}
+   try{const j=await ghReq(v,'https://api.github.com/repos/'+GH.repo);if(j.permissions&&!j.permissions.push){Swal.showValidationMessage('โทเคนนี้ยังไม่มีสิทธิ์เขียน (ต้องเป็น Contents: Read and write)');return false}return v}catch(e){Swal.showValidationMessage('ใช้โทเคนไม่ได้: '+e.message);return false}}});
+ if(r.isConfirmed){sv('ktgh',r.value);toast('เชื่อม GitHub แล้ว ✅')}
+ else if(r.isDenied){try{localStorage.removeItem('ktgh')}catch(e){}toast('ลบโทเคนแล้ว','info')}}
+async function renameSet(){
+ const o=OS(),esc=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+ const r=await Swal.fire({title:'✏️ แก้ไขชื่อชุดข้อสอบ',width:640,showCancelButton:true,confirmButtonText:'บันทึก',cancelButtonText:'ยกเลิก',focusConfirm:false,
+  html:'<div style="text-align:left;max-height:55vh;overflow:auto">'+o.map(k=>'<label class="aql">'+IC[k]+' ชุดที่ '+(k+1)+' · '+ids(j=>Q[j][0]==k).length+' ข้อ</label><input class="aqi rn" data-k="'+k+'" value="'+esc(S[k])+'">').join('')+'</div>',
+  preConfirm:()=>{const nm=Object.assign({},MT.names||{});let ch=0;
+   for(const e of document.querySelectorAll('.rn')){const k=+e.dataset.k,v=e.value.trim();if(!v){Swal.showValidationMessage('ชื่อชุดที่ '+(k+1)+' ว่างไม่ได้');return false}
+    const before=S[k];if(v===S0[k])delete nm[k];else nm[k]=v;if(v!==before)ch++}
+   if(!ch){Swal.showValidationMessage('ยังไม่ได้แก้ไขชื่อ');return false}return nm}});
+ if(r.isConfirmed)saveMeta({names:r.value,order:MT.order||[]},'แก้ไขชื่อชุดข้อสอบ')}
+const grp=k=>k<G?0:k<H?1:2;
+function ordHtml(){const o=window._ord,gn=['📘 ก.พ. / กฎหมาย / จริยธรรม','📚 ภาษาไทย แยกหัวข้อ','📝 ชุดข้อสอบวิชาภาษาไทย'];
+ return gn.map((t,g)=>{const a=o.filter(k=>grp(k)==g);return a.length?'<h2 style="font-size:1rem;margin:10px 0 4px">'+t+'</h2>'+a.map((k,n)=>'<div style="display:flex;align-items:center;gap:6px;padding:6px 0;border-bottom:1px solid var(--b)"><span style="flex:1;font-size:.92rem">'+IC[k]+' '+String(S[k]).replace(/^ภาษาไทย · /,'').replace(/</g,'&lt;')+'</span><button class="ib" '+(n?'':'disabled')+' onclick="ordMv('+k+',-1)">▲</button><button class="ib" '+(n<a.length-1?'':'disabled')+' onclick="ordMv('+k+',1)">▼</button></div>').join(''):''}).join('')}
+function ordMv(k,d){const o=window._ord,a=o.filter(x=>grp(x)==grp(k)),n=a.indexOf(k)+d;if(n<0||n>=a.length)return;const x=a[n],i=o.indexOf(k),j=o.indexOf(x);o[i]=x;o[j]=k;document.getElementById('ord-l').innerHTML=ordHtml()}
+async function orderSets(){
+ window._ord=OS();
+ const r=await Swal.fire({title:'↕️ จัดลำดับชุดข้อสอบ',width:560,showCancelButton:true,confirmButtonText:'บันทึกลำดับ',cancelButtonText:'ยกเลิก',html:'<div class="m" style="margin-bottom:4px">กด ▲ ▼ เพื่อสลับลำดับ (สลับได้ภายในกลุ่มเดียวกัน)</div><div id="ord-l" style="text-align:left;max-height:55vh;overflow:auto">'+ordHtml()+'</div>',preConfirm:()=>window._ord.slice()});
+ if(!r.isConfirmed)return;
+ if(JSON.stringify(r.value)==JSON.stringify(OS()))return toast('ลำดับไม่เปลี่ยน','info');
+ saveMeta({names:MT.names||{},order:r.value},'จัดลำดับชุดข้อสอบ')}
+function help(){const H=`<div style="text-align:left;font-size:.95rem;line-height:1.7"><b>⚡ เฉลยทันที</b> เห็นผลถูก/ผิดทันทีที่ตอบ<br><b>📝 เฉลยท้ายชุด</b> ทำให้ครบแล้วค่อยดูผลรวม<br><b>▦</b> ดูทุกข้อ กระโดดไปข้อไหนก็ได้<br><b>☆</b> บันทึกข้อที่อยากทบทวนทีหลัง<br><b>🎲 เจาะข้อที่ยังไม่เคยถูก</b> ฝึกเฉพาะข้อที่ยังพลาดอยู่<br><br><span class="m">ความคืบหน้าเก็บในเครื่องนี้ (เบราว์เซอร์) เท่านั้น</span></div>`;return window.Swal?Swal.fire({title:'📖 วิธีใช้งาน',html:H,confirmButtonText:'เข้าใจแล้ว'}):al('วิธีใช้งาน','เฉลยทันที / เฉลยท้ายชุด / ▦ ดูทุกข้อ / ☆ บันทึกข้อ')}
+async function resetData(){
+if(!window.Swal){if(confirm('ล้างความคืบหน้าและข้อที่บันทึกทั้งหมด?')){M=new Set();BK=new Set();sv('ktm',[]);sv('ktbk',[]);home()}return}
+const r=await Swal.fire({title:'รีเซ็ตข้อมูล',html:'เลือกสิ่งที่ต้องการล้าง<br><span class="m">ทำแล้วย้อนกลับไม่ได้</span>',icon:'warning',showCancelButton:true,showDenyButton:true,confirmButtonText:'ล้างความคืบหน้า',denyButtonText:'ล้างข้อที่บันทึก ⭐',cancelButtonText:'ยกเลิก',reverseButtons:true,focusCancel:true});
+if(r.isConfirmed){const ok=await cf('ล้างความคืบหน้าทั้งหมด?',`ข้อที่ทำถูกแล้ว ${M.size} ข้อ จะถูกรีเซ็ต`,'ล้างเลย','warning');if(ok){M=new Set();sv('ktm',[]);home();toast('ล้างความคืบหน้าแล้ว')}}
+else if(r.isDenied){const ok=await cf('ล้างข้อที่บันทึกทั้งหมด?',`ข้อที่บันทึกไว้ ${BK.size} ข้อ จะถูกลบ`,'ล้างเลย','warning');if(ok){BK=new Set();sv('ktbk',[]);home();toast('ล้างข้อที่บันทึกแล้ว')}}}
+function home(){stop();const pc=Math.round(M.size/Q.length*100),wr=ids(k=>!M.has(k)).length;
+A.innerHTML=`<div class="hero fade"><div style="flex:1"><h1>ฝึกทำข้อสอบ<br>ครูผู้ช่วย</h1><p>ภาค ก. · ${Q.length} ข้อ · ทำถูกแล้ว ${M.size} ข้อ</p></div><div class="rg" style="background:conic-gradient(#fff ${pc*3.6}deg,rgba(255,255,255,.25) 0)"><div><span>${pc}%<small>เก่งแล้ว</small></span></div></div></div>
+<div class="seg"><button class="${mode=='now'?'on':''}" onclick="setMode('now')">⚡ เฉลยทันที</button><button class="${mode=='end'?'on':''}" onclick="setMode('end')">📝 เฉลยท้ายชุด</button></div>
+<div class="q3"><button class="go" onclick="go(ids(()=>1),20)"><b>20</b><span>สุ่มเร็ว</span></button><button class="go" onclick="go(ids(()=>1),40)"><b>40</b><span>สุ่มกลาง</span></button><button class="go" onclick="go(ids(()=>1),60)"><b>60</b><span>สุ่มเต็ม</span></button></div>
+<button class="long" onclick="cust()"><span class="ic" style="background:#4f46e522">🎯</span><span><b>สุ่มเลือกวิชาเอง</b><br><span class="m">เลือกกี่ชุดก็ได้ · กำหนดจำนวนข้อเอง</span></span></button>
+<button class="long" onclick="go(ids(k=>!M.has(k)),30)" ${wr?'':'disabled'}><span class="ic" style="background:#ff6b4a22">🎲</span><span><b>เจาะข้อที่ยังไม่เคยถูก</b><br><span class="m">เหลือ ${wr} ข้อ</span></span></button>
+<button class="long" onclick="go([...BK])" ${BK.size?'':'disabled'}><span class="ic" style="background:#d99a0022">⭐</span><span><b>ทบทวนข้อที่บันทึกไว้</b><br><span class="m">${BK.size} ข้อ</span></span></button>
+<h2>เลือกทีละฉบับ</h2>`+OS().map(k=>k<G?row(k):'').join('')+`<h2>📚 วิชาภาษาไทย <span class="m">· ${H-G} หัวข้อ</span></h2><div class="q3" style="grid-template-columns:repeat(2,1fr)"><button class="go" onclick="go(ids(j=>Q[j][0]>=G),30)"><b>30</b><span>สุ่มภาษาไทย</span></button><button class="go" onclick="go(ids(j=>Q[j][0]>=G),60)"><b>60</b><span>สุ่มภาษาไทย</span></button></div><div class="m" style="margin:8px 2px 4px">ภาษาไทยทั้งหมด ${ids(j=>Q[j][0]>=G).length} ข้อ · ถูกแล้ว ${ids(j=>Q[j][0]>=G&&M.has(j)).length} ข้อ</div>`+OS().map(k=>k>=G&&k<H?row(k):'').join('')+`<h2>📝 ชุดข้อสอบวิชาภาษาไทย <span class="m">· ${S.length-H} ชุด</span></h2><div class="q3" style="grid-template-columns:repeat(2,1fr)"><button class="go" onclick="go(ids(j=>Q[j][0]>=H),30)"><b>30</b><span>สุ่มจากทุกชุด</span></button><button class="go" onclick="go(ids(j=>Q[j][0]>=H),60)"><b>60</b><span>สุ่มจากทุกชุด</span></button></div><div class="m" style="margin:8px 2px 4px">${ids(j=>Q[j][0]>=H).length} ข้อ · ถูกแล้ว ${ids(j=>Q[j][0]>=H&&M.has(j)).length} ข้อ</div>`+OS().map(k=>k>=H?row(k):'').join('')+`<button class="long" onclick="manage()"><span class="ic" style="background:#22d3ee22">⚙️</span><span><b>การจัดการ</b><br><span class="m">เพิ่ม/ลบ/เปลี่ยนชื่อ/จัดลำดับชุดข้อสอบ · ต้องใส่รหัส 6 หลัก</span></span></button><div style="display:flex;gap:10px;margin-top:22px"><button class="btn" style="margin:0" onclick="help()">📖 วิธีใช้</button><button class="btn" style="margin:0;color:var(--no)" onclick="resetData()">🗑️ รีเซ็ตข้อมูล</button></div>`}
+let cs=new Set(ld('ktcs',[]).filter(k=>k<S.length)),cn=ld('ktcn',40);
+const CNT=S.map((s,k)=>Q.filter(q=>q[0]==k).length),GR=[['📘 ก.พ. / กฎหมาย / จริยธรรม',0,G],['📚 ภาษาไทย แยกหัวข้อ',G,H],['📝 ชุดข้อสอบวิชาภาษาไทย',H,S.length]];
+function cust(){stop();
+A.innerHTML=`<div class="top"><button class="ib" onclick="home()">← กลับ</button><b style="flex:1">🎯 สุ่มเลือกวิชาเอง</b></div><div class="m" style="margin:4px 2px 0">เลือกกี่ชุดก็ได้ แล้วกำหนดจำนวนข้อที่จะสุ่ม</div>`+GR.map(([t,a,b])=>`<div class="gh"><h2>${t}</h2><button class="ib" onclick="tgg(${a},${b})">เลือก/ล้างทั้งกลุ่ม</button></div>`+OS().map(k=>{const s=S[k];return k>=a&&k<b?`<button class="opt${cs.has(k)?' on':''}" id="cs${k}" onclick="tg(${k})"><span class="l">${cs.has(k)?'✓':''}</span><span>${s.replace(/^ภาษาไทย · /,'')}<br><span class="m">${CNT[k]} ข้อ</span></span></button>`:''}).join('')).join('')+`<div style="height:80px"></div><div class="dock"><div style="flex-direction:column"><div class="cn">${[20,40,60,100].map(n=>`<button id="cc${n}" onclick="sc(${n})">${n}</button>`).join('')}<input id="cni" type="number" inputmode="numeric" min="1" max="999" value="${cn}" aria-label="จำนวนข้อ" oninput="sc(this.value,1)"></div><span class="m" id="cs-sum" style="text-align:center"></span><button class="pri" id="cs-go" onclick="st()"></button></div></div>`;sm();scrollTo(0,0)}
+function pt(k){const e=document.getElementById('cs'+k);if(!e)return;e.classList.toggle('on',cs.has(k));e.firstChild.textContent=cs.has(k)?'✓':''}
+function sm(){const X=[...cs].reduce((a,k)=>a+CNT[k],0),n=Math.min(cn,X),g=document.getElementById('cs-go');
+document.getElementById('cs-sum').textContent=cs.size?`เลือก ${cs.size} ชุด · มีทั้งหมด ${X} ข้อ`+(cn>X?' (ไม่ถึงจำนวนที่ต้องการ จะสุ่มทั้งหมด)':''):'ยังไม่ได้เลือกชุดข้อสอบ';
+g.textContent=`เริ่มสุ่ม ${n} ข้อ`;g.disabled=!(cs.size&&cn>0);
+[20,40,60,100].forEach(v=>document.getElementById('cc'+v).classList.toggle('on',cn==v));sv('ktcs',[...cs]);sv('ktcn',cn)}
+function tg(k){cs.has(k)?cs.delete(k):cs.add(k);pt(k);sm()}
+function tgg(a,b){const r=[];for(let k=a;k<b;k++)r.push(k);const all=r.every(k=>cs.has(k));r.forEach(k=>{all?cs.delete(k):cs.add(k);pt(k)});sm()}
+function sc(v,fi){cn=Math.max(0,Math.min(999,parseInt(v)||0));if(!fi)document.getElementById('cni').value=cn;sm()}
+function st(){if(!cs.size){al('ยังไม่ได้เลือกชุดข้อสอบ','แตะเลือกอย่างน้อย 1 ชุดก่อนนะครับ','warning');return}
+const a=ids(j=>cs.has(Q[j][0]));if(cn>a.length)toast(`มีแค่ ${a.length} ข้อ จะสุ่มทั้งหมด`,'info');go(a,cn)}
+function go(a,n){if(!a.length){al('ไม่มีข้อสอบให้ทำ','ลองเลือกชุดอื่นดูนะครับ','info');return}qs=sh(a).slice(0,n||999);an=[];i=0;pal=0;t0=Date.now();stop();tm=setInterval(()=>{const e=document.getElementById('tm');if(e)e.textContent=mmss(Math.floor((Date.now()-t0)/1000))},1000);show()}
+function show(){const id=qs[i],q=Q[id],a=an[i],lock=mode=='now'&&a!=null,last=i==qs.length-1;
+A.innerHTML=`<div class="top"><button class="ib" aria-label="ออกจากข้อสอบ" onclick="quit()">✕ ออก</button><div class="bar"><i style="width:${(i+1)/qs.length*100}%"></i></div><span class="m" id="tm">${mmss(Math.floor((Date.now()-t0)/1000))}</span><button class="ib" aria-label="ดูทุกข้อ" onclick="pal=1;show()">▦</button></div>
+<div class="fade"><div class="card"><div class="qn"><span class="tag" style="background:${CL[q[0]]}">${IC[q[0]]} ${S[q[0]]}</span><button class="ib" aria-label="บันทึกข้อนี้" onclick="bk(${id})">${BK.has(id)?'⭐':'☆'}</button></div><div class="m">ข้อ ${i+1} จาก ${qs.length}</div><div class="q">${q[1]}</div></div>`+q[2].map((c,k)=>{let cl=a===k?' on':'';if(lock)cl=k==q[3]?' ok':a===k?' bad':'';return `<button class="opt${cl}" ${lock?'disabled':''} onclick="pick(${k})"><span class="l">${L[k]}</span><span>${c}</span></button>`}).join('')+`</div><div class="dock"><div><button onclick="mv(-1)" ${i?'':'disabled'}>←</button>${last?`<button class="pri" onclick="end()">ส่งและดูผล ✓</button>`:`<button class="pri" onclick="mv(1)">ถัดไป →</button>`}</div></div>`+(pal?`<div class="pal" onclick="pal=0;show()"><div onclick="event.stopPropagation()"><b>ข้อทั้งหมด</b> <span class="m">แตะเพื่อกระโดดไปข้อนั้น</span><div class="nv"><button class="btn" onclick="pal=0;quit()">🔀 เลือกข้อสอบชุดใหม่</button></div><div class="g">${qs.map((x,k)=>{const r=an[k];let c=r==null?'':mode=='now'?(r===Q[x][3]?'ok':'bad'):'d';return `<button class="${c}${k==i?' cur':''}" onclick="i=${k};pal=0;show()">${k+1}</button>`}).join('')}</div></div></div>`:'')}
+async function quit(){const u=qs.length-an.filter(x=>x!=null).length;if(await cf('ออกจากข้อสอบ?',u?`ยังไม่ได้ตอบ ${u} ข้อ ผลที่ทำไปจะไม่ถูกบันทึก`:'','ออกเลย','warning'))home()}
+function bk(id){const had=BK.has(id);had?BK.delete(id):BK.add(id);sv('ktbk',[...BK]);show();toast(had?'ยกเลิกการบันทึกแล้ว':'บันทึกข้อนี้แล้ว ⭐',had?'info':'success')}
+function pick(k){an[i]=k;if(mode=='now'&&k===Q[qs[i]][3]){M.add(qs[i]);sv('ktm',[...M])}show()}
+function mv(d){i+=d;show();scrollTo(0,0)}
+async function end(){const u=qs.length-an.filter(x=>x!=null).length;if(u&&!await cf('ส่งข้อสอบเลยไหม?',`ยังไม่ได้ตอบ ${u} ข้อ`,'ส่งเลย','warning'))return;stop();tt=Math.floor((Date.now()-t0)/1000);
+qs.forEach((x,k)=>{if(an[k]===Q[x][3])M.add(x)});sv('ktm',[...M]);flt=0;rev();done()}
+function wrongOnly(){const w=qs.filter((x,k)=>an[k]!==Q[x][3]);if(!w.length){al('ไม่มีข้อผิดเลย 🎉','ชุดนี้ถูกครบทุกข้อแล้ว','success');return}go(w);toast(`ทบทวนข้อที่ผิด ${w.length} ข้อ`,'info')}
+function done(){const n=qs.length,r=qs.filter((x,k)=>an[k]===Q[x][3]).length,pc=Math.round(r/n*100);
+if(!window.Swal)return;Swal.fire({icon:pc>=60?'success':'warning',title:pc==100?'เต็ม 100%! 🏆':pc>=80?'เยี่ยมมาก! 🎉':pc>=60?'ผ่านเกณฑ์แล้ว 👍':'อีกนิดเดียว 💪',html:`<div style="font-size:2.4rem;font-weight:700;font-family:Prompt,sans-serif;background:linear-gradient(135deg,var(--p),var(--a));-webkit-background-clip:text;background-clip:text;color:transparent">${pc}%</div><div>ถูก ${r} จาก ${n} ข้อ · เวลา ${mmss(tt)}</div>`,confirmButtonText:'ดูเฉลย'})}
+function rev(){const r=qs.filter((x,k)=>an[k]===Q[x][3]).length,n=qs.length,pc=Math.round(r/n*100),col=pc>=60?'var(--ok)':'var(--no)',msg=pc>=80?'เยี่ยมมาก! 🎉':pc>=60?'ผ่านเกณฑ์แล้ว 👍':'อีกนิดเดียว สู้ต่อ 💪';
+A.innerHTML=`<div class="card res fade"><div class="rg" style="background:conic-gradient(${col} ${pc*3.6}deg,var(--b) 0)"><div><span>${pc}%<small>${r}/${n} ข้อ</small></span></div></div><b>${msg}</b><div class="st"><div><b class="ok">${r}</b><span class="m">ถูก</span></div><div><b class="no">${n-r}</b><span class="m">ผิด/ว่าง</span></div><div><b>${mmss(tt)}</b><span class="m">เวลา</span></div></div></div>
+<button class="btn pri" onclick="go(qs.slice())">ทำชุดนี้ใหม่ 🔄</button><button class="btn" onclick="wrongOnly()">ทำเฉพาะข้อที่ผิด</button><button class="btn" onclick="home()">🔀 เลือกข้อสอบชุดใหม่</button>
+<div class="tabs">${['ทั้งหมด','เฉพาะข้อผิด','⭐ บันทึก'].map((t,k)=>`<button class="${flt==k?'on':''}" onclick="flt=${k};rev()">${t}</button>`).join('')}</div>`+qs.map((x,k)=>{const q=Q[x],ok=an[k]===q[3];if(flt==1&&ok||flt==2&&!BK.has(x))return'';return `<div class="card"><b>${k+1}. ${q[1]}</b> <span class="${ok?'ok':'no'}">${ok?'✓ ถูก':'✗ ผิด'}</span><div class="m" style="margin:2px 0 6px">${S[q[0]]}</div>`+q[2].map((c,j)=>`<div class="rv${j===q[3]?' a':''}${j===an[k]&&!ok?' w':''}">${L[j]}) ${c}${j===q[3]?' ✓':''}${j===an[k]&&!ok?' · ที่คุณเลือก':''}</div>`).join('')+`</div>`}).join('');scrollTo(0,0)}
+home();
+if(!ld('ktwelcome',0)){sv('ktwelcome',1);setTimeout(help,400)}
+</script></body></html>
