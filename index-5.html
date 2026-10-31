@@ -1,0 +1,571 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ฝึกทำข้อสอบครูผู้ช่วย</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;700&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf6f0;--c:#fff;--t:#1b1a2e;--m:#78758f;--p:#4f46e5;--a:#ff6b4a;--ok:#0f9d6b;--no:#e0364f;--b:#ece7de;--sh:0 1px 2px rgba(30,20,60,.06),0 10px 28px rgba(30,20,60,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12111d;--c:#1c1a2e;--t:#f1f0fb;--m:#9d9bbb;--p:#8b84ff;--a:#ff8466;--ok:#4cd9a0;--no:#ff8a9c;--b:#2d2b47;--sh:0 10px 28px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#12111d;--c:#1c1a2e;--t:#f1f0fb;--m:#9d9bbb;--p:#8b84ff;--a:#ff8466;--ok:#4cd9a0;--no:#ff8a9c;--b:#2d2b47;--sh:0 10px 28px rgba(0,0,0,.4)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--t);font:16px/1.65 Sarabun,system-ui,sans-serif}
+main{max-width:640px;margin:auto;padding:14px 16px 110px}
+button{font:inherit;color:var(--t);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .12s}button:active{transform:scale(.97)}button:focus-visible{outline:3px solid var(--p);outline-offset:2px}button:disabled{opacity:.35}
+.m{color:var(--m);font-size:.86rem}h2{font-size:1rem;margin:24px 2px 8px;letter-spacing:.02em}
+.hero{border-radius:26px;padding:22px;color:#fff;background:radial-gradient(circle at 85% 10%,#ff6b4a 0,transparent 45%),radial-gradient(circle at 10% 100%,#7c3aed 0,transparent 55%),#312e81;box-shadow:var(--sh);display:flex;gap:16px;align-items:center}
+.hero h1{margin:0;font-size:1.45rem;line-height:1.3}.hero p{margin:.3rem 0 0;font-size:.9rem;opacity:.9}
+.rg{flex:none;width:84px;height:84px;border-radius:50%;display:grid;place-items:center}.rg div{width:66px;height:66px;border-radius:50%;background:#312e81;display:grid;place-items:center;font-weight:700;font-size:1.1rem;line-height:1}.rg small{font-size:.6rem;font-weight:400;opacity:.8;display:block;text-align:center}
+.seg{display:flex;background:var(--b);border-radius:16px;padding:4px;margin:14px 0 0}.seg button{flex:1;border:0;background:none;border-radius:12px;padding:9px 6px;font-size:.9rem}.seg .on{background:var(--c);box-shadow:var(--sh);font-weight:700}
+.q3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.go{border:0;border-radius:18px;background:var(--c);box-shadow:var(--sh);padding:14px 8px;text-align:center}.go b{display:block;font-size:1.3rem;color:var(--a)}.go span{font-size:.8rem;color:var(--m)}
+.long{display:flex;align-items:center;gap:12px;width:100%;border:0;border-radius:18px;background:var(--c);box-shadow:var(--sh);padding:13px 14px;margin-top:10px;text-align:left}
+.sub{display:flex;gap:14px;align-items:center;width:100%;border:0;border-radius:20px;background:var(--c);box-shadow:var(--sh);padding:14px;margin:10px 0;text-align:left}
+.ic{flex:none;width:50px;height:50px;border-radius:16px;display:grid;place-items:center;font-size:1.5rem}
+.sub b{display:block;line-height:1.35}.bt{height:6px;border-radius:3px;background:var(--b);margin-top:8px;overflow:hidden}.bt i{display:block;height:100%;border-radius:3px}
+.top{display:flex;align-items:center;gap:10px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:8px 0;z-index:5}
+.ib{flex:none;border:0;background:var(--c);box-shadow:var(--sh);border-radius:12px;min-width:40px;height:40px;padding:0 10px}
+.bar{flex:1;height:8px;background:var(--b);border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--p),var(--a));transition:width .3s}
+.card{background:var(--c);border-radius:22px;padding:18px;margin:10px 0;box-shadow:var(--sh)}
+.tag{display:inline-block;border-radius:99px;padding:2px 12px;font-size:.78rem;font-weight:700;color:#fff}
+.qn{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.q{font-weight:700;font-size:1.08rem;line-height:1.6}
+.opt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;margin:10px 0;border:2px solid var(--b);background:var(--c);border-radius:18px;padding:12px 14px}
+.l{flex:none;width:30px;height:30px;border-radius:10px;display:grid;place-items:center;background:var(--b);font-weight:700;font-size:.9rem}
+.opt.on{border-color:var(--p)}.opt.on .l{background:var(--p);color:#fff}
+.opt.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,var(--c))}.opt.ok .l{background:var(--ok);color:#fff}
+.opt.bad{border-color:var(--no);background:color-mix(in srgb,var(--no) 14%,var(--c))}.opt.bad .l{background:var(--no);color:#fff}
+.dock{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--b);z-index:6}
+.dock div{max-width:640px;margin:auto;display:flex;gap:10px}.dock button{flex:1;border:2px solid var(--b);background:var(--c);border-radius:16px;padding:13px}
+.pri{background:linear-gradient(135deg,var(--p),var(--a))!important;color:#fff!important;border:0!important;font-weight:700}
+.btn{display:block;width:100%;border:2px solid var(--b);background:var(--c);border-radius:16px;padding:13px;margin:10px 0}
+.pal{position:fixed;inset:0;background:rgba(10,8,25,.55);z-index:20;display:flex;align-items:flex-end}.pal>div{background:var(--bg);width:100%;max-width:640px;margin:auto;border-radius:24px 24px 0 0;padding:18px 16px calc(24px + env(safe-area-inset-bottom,0px));max-height:70%;overflow:auto}
+.g{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:10px}.g button{border:2px solid var(--b);background:var(--c);border-radius:12px;padding:8px 0}.g .d{background:var(--p);color:#fff;border-color:var(--p)}.g .ok{background:var(--ok);color:#fff;border-color:var(--ok)}.g .bad{background:var(--no);color:#fff;border-color:var(--no)}.g .cur{outline:3px solid var(--a)}
+.res{text-align:center}.res .rg{width:150px;height:150px;margin:6px auto}.res .rg div{width:118px;height:118px;background:var(--c);color:var(--t);font-size:2.1rem}.res .rg small{font-size:.8rem;color:var(--m)}
+.st{display:flex;gap:8px;margin-top:12px}.st div{flex:1;background:var(--bg);border-radius:14px;padding:8px}.st b{display:block;font-size:1.15rem}
+.tabs{display:flex;gap:8px;margin:16px 0 4px}.tabs button{flex:1;border:2px solid var(--b);background:var(--c);border-radius:99px;padding:7px 4px;font-size:.85rem}.tabs .on{border-color:var(--p);color:var(--p);font-weight:700}
+.ok{color:var(--ok)}.no{color:var(--no)}.rv{padding:6px 10px;border-radius:10px;margin:4px 0;font-size:.95rem}.rv.a{background:color-mix(in srgb,var(--ok) 18%,var(--c));font-weight:700}.rv.w{background:color-mix(in srgb,var(--no) 18%,var(--c))}
+.fade{animation:f .3s}@keyframes f{from{opacity:0;transform:translateY(8px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.cn{width:100%;display:flex;gap:8px}.dock .cn button{padding:8px 0;border-radius:12px;font-size:.92rem}.dock .cn button.on{border-color:var(--p);background:color-mix(in srgb,var(--p) 14%,var(--c));font-weight:700}.cn input{flex:1.4;min-width:0;border:2px solid var(--b);border-radius:12px;background:var(--c);color:var(--t);font:inherit;padding:6px 8px;text-align:center}.cn input:focus{outline:3px solid var(--p);outline-offset:1px}.gh{display:flex;align-items:center;justify-content:space-between}.gh .ib{height:32px;font-size:.8rem}
+
+/* ===== ธีมใหม่: นีออนมืด ===== */
+:root,:root:not([data-theme="light"]),:root[data-theme="dark"]{--bg:#07080f;--c:#10121f;--t:#eef1ff;--m:#8a90b2;--p:#22d3ee;--a:#e879f9;--ok:#34f5a4;--no:#ff5d7a;--b:#23263d;--on:#06121a;--sh:0 0 0 1px rgba(255,255,255,.05),0 12px 30px rgba(0,0,0,.45)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef1fb;--c:#fff;--t:#0b0e24;--m:#5b6285;--p:#6d28d9;--a:#e11d8a;--ok:#0f9d6b;--no:#e0364f;--b:#dde1f3;--on:#fff;--sh:0 1px 2px rgba(30,20,60,.06),0 10px 28px rgba(30,20,60,.1)}}
+:root[data-theme="light"]{--bg:#eef1fb;--c:#fff;--t:#0b0e24;--m:#5b6285;--p:#6d28d9;--a:#e11d8a;--ok:#0f9d6b;--no:#e0364f;--b:#dde1f3;--on:#fff;--sh:0 1px 2px rgba(30,20,60,.06),0 10px 28px rgba(30,20,60,.1)}
+body{background:radial-gradient(60% 40% at 92% -5%,color-mix(in srgb,var(--p) 24%,transparent),transparent),radial-gradient(50% 35% at -8% 45%,color-mix(in srgb,var(--a) 16%,transparent),transparent),var(--bg);background-attachment:fixed}
+h1,h2,.go b,.rg,.tag,.pri,.top b,.l{font-family:Prompt,Sarabun,system-ui,sans-serif}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0e7490,#6d28d9 55%,#be185d);border:1px solid rgba(255,255,255,.2);box-shadow:0 18px 50px color-mix(in srgb,var(--a) 28%,transparent)}
+.hero::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.06) 0 2px,transparent 2px 14px);pointer-events:none}
+.hero>*{position:relative;z-index:1}.hero h1{text-shadow:0 2px 18px rgba(0,0,0,.35)}.rg div{background:#0b0d1c}
+.go,.sub,.long,.card{border:1px solid color-mix(in srgb,var(--t) 9%,transparent)}
+.go b{font-size:1.55rem;background:linear-gradient(135deg,var(--p),var(--a));-webkit-background-clip:text;background-clip:text;color:transparent}
+.go:hover,.sub:hover,.long:hover{border-color:var(--p);box-shadow:0 0 0 1px var(--p),0 10px 30px color-mix(in srgb,var(--p) 26%,transparent)}
+h2{display:flex;align-items:center;gap:8px;font-size:.95rem}h2::before{content:"";width:4px;height:1.1em;border-radius:2px;background:linear-gradient(var(--p),var(--a))}
+.ic{border:1px solid color-mix(in srgb,var(--t) 12%,transparent)}
+.bt{height:5px}.bt i{box-shadow:0 0 8px rgba(255,255,255,.3)}
+.seg{border:1px solid var(--b)}.seg .on{background:linear-gradient(135deg,color-mix(in srgb,var(--p) 30%,var(--c)),color-mix(in srgb,var(--a) 24%,var(--c)))}
+.pri{background:linear-gradient(135deg,var(--p),#8b5cf6 55%,var(--a))!important;color:var(--on)!important;box-shadow:0 8px 26px color-mix(in srgb,var(--p) 40%,transparent)}
+.tag{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.45)}.q{font-size:1.1rem}
+.opt.on{box-shadow:0 0 0 3px color-mix(in srgb,var(--p) 22%,transparent)}.opt.on .l{color:var(--on)}.opt.ok .l,.opt.bad .l{color:var(--on)}
+.opt.ok{box-shadow:0 0 18px color-mix(in srgb,var(--ok) 28%,transparent)}.opt.bad{box-shadow:0 0 18px color-mix(in srgb,var(--no) 26%,transparent)}
+.bar i{box-shadow:0 0 12px color-mix(in srgb,var(--p) 70%,transparent)}
+.dock{border-top:1px solid color-mix(in srgb,var(--p) 30%,var(--b))}.pal>div{border:1px solid var(--b)}
+.swal2-popup{background:var(--c)!important;color:var(--t)!important;border:1px solid var(--b);border-radius:24px!important;font-family:Sarabun,system-ui,sans-serif!important}
+.swal2-title{color:var(--t)!important;font-family:Prompt,Sarabun,sans-serif!important;font-size:1.3rem!important}
+.swal2-html-container{color:var(--m)!important;font-size:1rem!important}
+.swal2-styled.swal2-confirm{background:linear-gradient(135deg,var(--p),var(--a))!important;color:var(--on)!important;border-radius:14px!important;font-weight:700;box-shadow:none!important}
+.swal2-styled.swal2-cancel{background:var(--b)!important;color:var(--t)!important;border-radius:14px!important;box-shadow:none!important}
+.swal2-toast{background:var(--c)!important;color:var(--t)!important;border:1px solid var(--b)}
+.swal2-container{z-index:9999!important}
+.aqi{width:100%;box-sizing:border-box;border:2px solid var(--b);background:var(--bg);color:var(--t);border-radius:12px;padding:9px 11px;font:inherit;font-size:.95rem;margin:4px 0 10px}
+.aqi:focus{outline:none;border-color:var(--p)}textarea.aqi{min-height:190px;font:.82rem/1.5 ui-monospace,Menlo,Consolas,monospace;resize:vertical;white-space:pre}
+.aql{display:block;text-align:left;font-size:.85rem;color:var(--m);font-weight:700}
+.cmc{border:1px solid var(--b);border-radius:14px;padding:10px;margin:0 0 10px;background:color-mix(in srgb,var(--p) 5%,transparent)}.cmh{display:flex;gap:8px;align-items:center}.cmh .aqi{margin:0}.cmh .cmi{width:56px;flex:none;text-align:center}.cmh2{display:flex;gap:6px;align-items:center;margin:8px 0}.cmt{flex:1;font-size:.88rem;display:flex;gap:6px;align-items:center}.cmr{display:flex;align-items:center;gap:6px;padding:6px 0;border-top:1px solid var(--b)}.cmn{flex:1;min-width:0;font-size:.9rem}.cms{flex:none;max-width:42%;border:2px solid var(--b);border-radius:10px;background:var(--bg);color:var(--t);padding:6px;font:inherit;font-size:.82rem}.cmc .ib{min-width:36px;height:36px}
+.chips{display:flex;gap:8px;overflow-x:auto;position:sticky;top:0;z-index:5;margin:18px -2px 0;padding:8px 2px;background:var(--bg);scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chip{flex:none;white-space:nowrap;border:2px solid var(--b);background:var(--c);color:var(--t);border-radius:999px;padding:8px 14px;font:inherit;font-size:.9rem}.chip.on{border-color:var(--p);background:color-mix(in srgb,var(--p) 16%,var(--c));font-weight:700}
+.subw{display:flex;gap:8px;margin:10px 0;align-items:stretch}
+.cornr{display:flex;justify-content:flex-end;margin:0 0 8px}.cornr .ib{height:32px;min-width:0;padding:0 12px;border-radius:999px;font-size:.8rem}.ao{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border-radius:12px;margin:6px 0;border:2px solid var(--b);line-height:1.5}.ao.hit{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,var(--c));font-weight:700}
+.seg button{white-space:nowrap;padding-left:4px;padding-right:4px;font-size:.84rem}.seg .ans{flex:.9;border-left:1px solid color-mix(in srgb,var(--t) 14%,transparent);border-radius:0 12px 12px 0;margin-left:4px;color:var(--p);font-weight:700}
+.segrow{display:flex;gap:8px;align-items:stretch;margin:14px 0 0}.segrow .seg{flex:1;min-width:0;margin:0}.ansb{flex:none;display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid color-mix(in srgb,var(--p) 55%,transparent);border-radius:16px;padding:0 16px;color:var(--p);background:transparent;font-weight:700;font-size:.9rem;box-shadow:none}.ansb:active{background:color-mix(in srgb,var(--p) 12%,transparent)}
+.sypill{margin:0 0 10px}.sypill:empty{display:none}
+.syx{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-radius:16px;border:1px solid var(--b);background:color-mix(in srgb,var(--p) 6%,var(--c));font-size:.88rem;line-height:1.4;text-align:left}
+.syx>span:nth-child(2){flex:1;min-width:0}.syx b{display:block;color:var(--t)}.syx small{display:block;color:var(--m);font-size:.8rem}
+.sydot{flex:none;width:11px;height:11px;border-radius:50%;margin-top:5px;background:var(--ok)}.sy-w{background:#f5a623}.sy-e{background:var(--no)}.sy-n{background:var(--m)}.sydot.pulse{animation:syp 1.1s ease-in-out infinite}@keyframes syp{50%{opacity:.25}}
+.sysp{display:flex;gap:6px;margin-top:8px}.sysp span{flex:1;font-size:.72rem;text-align:center;padding:4px 2px;border-radius:8px;background:var(--b);color:var(--m)}.sysp .d{background:color-mix(in srgb,var(--ok) 20%,var(--c));color:var(--ok);font-weight:700}.sysp .w{background:color-mix(in srgb,#f5a623 22%,var(--c));color:#f5a623;font-weight:700}
+.sybtn{margin-top:8px;border:1px solid var(--b);background:var(--c);border-radius:10px;padding:5px 12px;font-size:.8rem}
+.mg{text-align:left}.mg-h{font-size:.76rem;font-weight:700;color:var(--m);letter-spacing:.05em;margin:16px 2px 6px}
+.mg-i{display:flex;align-items:center;gap:12px;width:100%;box-sizing:border-box;border:1px solid var(--b);background:var(--c);color:var(--t);border-radius:16px;padding:9px 12px;margin:0 0 8px;text-align:left;min-height:56px}
+button.mg-i:hover{border-color:var(--p)}
+.mg-ic{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:1.25rem;background:color-mix(in srgb,var(--p) 14%,transparent)}
+.mg-tx{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.35}.mg-tx b{font-size:.98rem;color:var(--t)}.mg-tx small{color:var(--m);font-size:.8rem}
+.mg-go{flex:none;color:var(--m);font-size:1.3rem}.mg-bd{flex:none;font-size:.72rem;padding:2px 9px;border-radius:99px;border:1px solid var(--b);color:var(--m)}.mg-bd.g{color:var(--ok);border-color:var(--ok)}
+.mg-i.dn .mg-ic{background:color-mix(in srgb,var(--no) 14%,transparent)}
+.mg-list{max-height:48vh;overflow:auto}
+</style></head><body><main id="app"></main>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+<script src="exam-data.js"></script>
+<script src="user-data.js" onerror="window.UDMISS=1"></script>
+<script>
+if(!window.BASE){document.getElementById('app').innerHTML='<div style="padding:24px;font:16px sans-serif">ไม่พบไฟล์ <b>exam-data.js</b> — วางไว้โฟลเดอร์เดียวกับ index.html</div>';if(window.Swal)Swal.fire({icon:'error',title:'โหลดข้อสอบไม่สำเร็จ',html:'ไม่พบไฟล์ <b>exam-data.js</b><br>วางไว้โฟลเดอร์เดียวกับ index.html แล้วรีเฟรชหน้า',confirmButtonText:'รีเฟรช'}).then(()=>location.reload());throw new Error('exam-data.js missing')}
+const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+// ===== สำเนาล่าสุดในเครื่อง (ktud): หลังบันทึกขึ้น GitHub เครื่องนี้เห็นผลทันที ไม่ต้องรอ GitHub Pages =====
+const hs=s=>{let h=5381;for(let i=0;i<s.length;i++)h=((h<<5)+h+s.charCodeAt(i))|0;return s.length+':'+h};
+const udSig=(m,e)=>hs(JSON.stringify([m||null,e||[]]));
+const RAWSIG=udSig(window.META,window.EXTRA);
+(function(){const o=ld('ktud',null);if(!o)return;
+ const drop=()=>{try{localStorage.removeItem('ktud')}catch(e){}};
+ try{if(typeof o.text!='string'||!Array.isArray(o.from))return drop();
+  if(RAWSIG===o.ns||Date.now()-(o.t||0)>864e5)return drop();   // เว็บอัปเดตทันแล้ว / ค้างเกิน 24 ชม.
+  if(!o.from.includes(RAWSIG))return drop();                    // ไฟล์บนเว็บเปลี่ยนจากที่อื่น ใช้ของเว็บ
+  const w={};new Function('window',o.text)(w);window.META=w.META;window.EXTRA=w.EXTRA}catch(e){drop()}})();
+const S=[],Q=[],IC=[],CL=[],S0=[],IC0=[],CL0=[],L=['ก','ข','ค','ง','จ'],MT={names:{},order:[]};
+// สร้าง S/Q/IC/CL จาก BASE + EXTRA + META (เรียกซ้ำได้หลังบันทึก เพื่อไม่ต้องรีเฟรชหน้า)
+function buildData(){
+ S.length=Q.length=IC.length=CL.length=0;
+ BASE.S.forEach(v=>S.push(v));BASE.Q.forEach(v=>Q.push(v));BASE.IC.forEach(v=>IC.push(v));BASE.CL.forEach(v=>CL.push(v));
+ // ต่อชุดเพิ่มเติม (EXTRA) จาก user-data.js ต่อท้าย S/Q เพื่อให้ความคืบหน้าเดิมไม่เพี้ยน
+ try{(window.EXTRA||[]).forEach(b=>{let k;if(b.to!=null){k=b.to;if(!(k>=0&&k<S.length))return}else{k=S.length;S.push(b.name);IC.push(b.icon||'📝');CL.push(b.color||'#6c5ce7')}b.q.forEach(q=>Q.push([k,q[0],q[1],q[2]]))})}catch(e){}
+ S0.length=0;S.forEach(v=>S0.push(v));
+ Object.keys(MT).forEach(k=>delete MT[k]);Object.assign(MT,{names:{},order:[]},window.META||{});
+ Object.keys(MT.names||{}).forEach(k=>{if(S[k]!=null&&String(MT.names[k]).trim())S[k]=MT.names[k]});
+ IC0.length=0;IC.forEach(v=>IC0.push(v));CL0.length=0;CL.forEach(v=>CL0.push(v));
+ Object.keys(MT.icons||{}).forEach(k=>{if(IC[k]!=null&&String(MT.icons[k]).trim())IC[k]=MT.icons[k]});
+ Object.keys(MT.colors||{}).forEach(k=>{if(CL[k]!=null&&String(MT.colors[k]).trim())CL[k]=MT.colors[k]})}
+buildData();
+const OS=()=>{const o=(MT.order||[]).filter((k,i,a)=>k>=0&&k<S.length&&a.indexOf(k)==i);S.forEach((s,k)=>{if(!o.includes(k))o.push(k)});return o};
+const A=document.getElementById('app'),sh=a=>[...a].sort(()=>Math.random()-.5);
+let M=new Set(ld('ktm',[])),BK=new Set(ld('ktbk',[])),mode=ld('ktmode','now'),qs=[],an=[],i=0,t0=0,tm=0,flt=0,pal=0,tt=0;
+const ids=f=>Q.map((q,k)=>k).filter(f),mmss=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+const stop=()=>clearInterval(tm);
+// SweetAlert2 (ถ้าโหลดไม่ได้ จะ fallback เป็น confirm ปกติ)
+const cf=(title,text,ok,icon)=>window.Swal?Swal.fire({title,text,icon:icon||'question',showCancelButton:true,confirmButtonText:ok||'ตกลง',cancelButtonText:'ยกเลิก',reverseButtons:true,focusCancel:true}).then(r=>r.isConfirmed):Promise.resolve(confirm(title+(text?'\n'+text:'')));
+const al=(title,text,icon)=>window.Swal?Swal.fire({title,html:text,icon:icon||'info',confirmButtonText:'ตกลง'}):(alert(title+(text?'\n'+String(text).replace(/<[^>]+>/g,''):'')),Promise.resolve());
+let MG=0,SY={st:'idle'},SYL=0,SYP=0;
+if(window.Swal){const _fire=Swal.fire.bind(Swal);Swal.fire=function(o){if(MG&&o&&typeof o=='object'&&!o.toast)o=Object.assign({allowOutsideClick:false,allowEscapeKey:false},o);return _fire.apply(null,arguments.length>1?arguments:[o])}}
+const toast=(t,icon)=>{if(window.Swal)Swal.fire({toast:true,position:'top',icon:icon||'success',title:t,showConfirmButton:false,timer:1400,timerProgressBar:true})};
+const G=6,H=17;
+const I={shuf:'<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/></svg>',dice:'<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="8.5" cy="8.5" r="1.3" fill="currentColor" stroke="none"/><circle cx="15.5" cy="8.5" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="8.5" cy="15.5" r="1.3" fill="currentColor" stroke="none"/><circle cx="15.5" cy="15.5" r="1.3" fill="currentColor" stroke="none"/></svg>',shufS:'<svg style="vertical-align:-.14em;margin-right:2px" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/></svg>'};
+function row(k){const s=S[k].replace(/^ภาษาไทย · /,'');const a=ids(j=>Q[j][0]==k),d=a.filter(j=>M.has(j)).length;return `<div class="subw fade"><button class="sub" style="margin:0;flex:1;min-width:0" onclick="go(ids(j=>Q[j][0]==${k}),0,true)"><span class="ic" style="background:${CL[k]}22">${IC[k]}</span><span style="flex:1"><b>${s}</b><span class="m">ถูกแล้ว ${d}/${a.length} ข้อ</span><div class="bt"><i style="width:${d/a.length*100}%;background:${CL[k]}"></i></div></span></button><button class="ib" style="height:auto;align-self:stretch;border-radius:20px;min-width:52px;display:grid;place-items:center" title="สุ่มข้อในชุดนี้" aria-label="สุ่มข้อในชุดนี้" onclick="go(ids(j=>Q[j][0]==${k}))" style="color:var(--a)">${I.shuf}</button></div>`}
+function setMode(m){mode=m;sv('ktmode',mode);home();toast(m=='now'?'⚡ เฉลยทันทีหลังตอบแต่ละข้อ':'📝 เฉลยตอนท้ายชุด','info')}
+
+// ===== สถานะการอัปเดต (แสดงบนหน้าแรก + ในเมนูการจัดการ) =====
+const _uo=ld('ktud',null);let SYT=_uo?(_uo.t||Date.now()):0,SYN=_uo?_uo.ns:'';
+function syGet(){return SY.st=='saving'||SY.st=='error'?SY:SYT?{st:'pending'}:{st:'idle'}}
+function syInner(full){const s=syGet(),gh=!!ld('ktgh','');
+ const stp=(a,b,c)=>'<div class="sysp"><span class="'+a+'">'+(a=='d'?'✓ ':a=='w'?'⏳ ':'')+'บันทึกขึ้น GitHub</span><span class="'+b+'">'+(b=='d'?'✓ ':b=='w'?'⏳ ':'')+'เครื่องนี้แสดงผล</span><span class="'+c+'">'+(c=='d'?'✓ ':c=='w'?'⏳ ':'')+'เว็บอัปเดต</span></div>';
+ const box=(dot,t,sub,extra)=>'<span class="sydot '+dot+'"></span><span><b>'+t+'</b><small>'+sub+'</small>'+(extra||'')+'</span>';
+ if(s.st=='saving')return box('sy-w pulse','กำลังบันทึกขึ้น GitHub…',escH(SY.msg||''),full?stp('w','',''):'');
+ if(s.st=='error')return box('sy-e','บันทึกไม่สำเร็จ',escH(SY.msg||''),'');
+ if(s.st=='pending'){const late=Date.now()-SYT>5*60e3;
+  return box('sy-w pulse','บันทึกแล้ว · รอเว็บอัปเดต','เครื่องนี้เห็นข้อมูลใหม่แล้ว · ผ่านไป <span class="sytm"></span>'+(late?' · นานกว่าปกติ ลองตรวจดูที่ GitHub':' · ปกติ 1–2 นาที'),(full?stp('d','d','w'):'')+'<button class="sybtn" onclick="syPoll(true)">🔄 ตรวจตอนนี้</button>')}
+ if(!full)return '';
+ const last=ld('ktsl',0);
+ if(!gh)return box('sy-n','ยังไม่ได้เชื่อม GitHub','บันทึกลงไฟล์ในเครื่อง หรือคัดลอกไปวางเอง · เมนู 🔗 เชื่อม GitHub เพื่อบันทึกอัตโนมัติ','');
+ return box('','ข้อมูลเป็นปัจจุบัน',last?'ซิงก์ล่าสุด '+new Date(last).toLocaleTimeString('th-TH',{hour:'2-digit',minute:'2-digit'}):'เว็บตรงกับที่บันทึกไว้',stp('d','d','d'))}
+function syPaint(){document.querySelectorAll('.syx').forEach(e=>{const h=syInner(e.dataset.full=='1');if(e._h!==h){e.innerHTML=h;e._h=h}
+ const t=e.querySelector('.sytm');if(t)t.textContent=mmss(Math.max(0,Math.floor((Date.now()-SYT)/1000)))})}
+async function syPoll(manual){if(SYP||!SYT)return;SYP=1;SYL=Date.now();
+ try{if(!/^https?:/.test(location.protocol))throw 0;
+  const r=await fetch('user-data.js?_='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;
+  const w={};new Function('window',await r.text())(w);
+  if(udSig(w.META,w.EXTRA)===SYN){try{localStorage.removeItem('ktud')}catch(e){}SYT=0;SYN='';sv('ktsl',Date.now());toast('เว็บอัปเดตแล้ว ✅')}
+  else if(manual)toast('เว็บยังไม่อัปเดต ลองใหม่อีกสักครู่','info')}
+ catch(e){if(manual)toast('ตรวจสถานะไม่ได้ (ต้องเปิดผ่านเว็บ)','info')}
+ finally{SYP=0;syPaint()}}
+setInterval(()=>{if(syGet().st!='idle')syPaint();
+ if(SYT&&!SYP&&/^https?:/.test(location.protocol)&&!document.hidden&&Date.now()-SYL>8000&&Date.now()-SYT<30*60e3)syPoll(false)},1000);
+
+// ===== เพิ่มข้อสอบ: วางรูปแบบ JS แล้วบันทึกลง user-data.js =====
+let FH=null;
+function aqParse(txt){let r;
+ try{r=new Function('"use strict";return ['+txt+'\n]')()}catch(e){throw new Error('อ่านรูปแบบไม่ได้: '+e.message)}
+ if(r.length==1&&Array.isArray(r[0])&&Array.isArray(r[0][0])&&Array.isArray(r[0][0][1]))r=r[0];
+ if(!r.length)throw new Error('ยังไม่ได้ใส่ข้อสอบ');
+ r.forEach((x,n)=>{const e=m=>{throw new Error('ข้อที่ '+(n+1)+': '+m)};
+  if(!Array.isArray(x)||x.length<3)e('ต้องเป็น ["โจทย์", ["ตัวเลือก",...], ข้อที่ถูก]');
+  if(typeof x[0]!='string'||!x[0].trim())e('โจทย์ว่าง');
+  if(!Array.isArray(x[1])||x[1].length<2||x[1].length>5||x[1].some(o=>typeof o!='string'||!o.trim()))e('ตัวเลือกต้องมี 2–5 ข้อ และเป็นข้อความ');
+  if(!Number.isInteger(x[2])||x[2]<0||x[2]>=x[1].length)e('ข้อที่ถูกต้องเป็นเลข 0–'+(x[1].length-1)+' (0=ก 1=ข 2=ค 3=ง 4=จ)')});
+ return r.map(x=>[x[0],x[1],x[2]])}
+function aqPieces(mode,meta,rows){if(mode=='js')return rows.map(aqSet).join(',\n');return aqSet(mode=='new'?{name:meta.name,icon:meta.icon,color:meta.color,q:rows}:{to:meta.to,q:rows})}
+function aqBuild(t,mode,meta,rows){
+ if(!/window\.EXTRA\s*=\s*\[/.test(t))throw new Error('ไม่พบ window.EXTRA ในไฟล์');
+ const m=t.match(/\]\s*;\s*$/);
+ if(!m)throw new Error('ท้ายไฟล์ไม่ตรงโครงสร้างที่คาดไว้ (ต้องจบด้วย ];)');
+ const head=t.slice(0,m.index).trimEnd().replace(/,$/,'');
+ return head+(/\[$/.test(head)?'\n':',\n')+aqPieces(mode,meta,rows)+'\n];\n'}
+async function aqFallback(mode,meta,rows,why){
+ const snip=',\n'+aqPieces(mode,meta,rows);
+ const how='เปิด <b>user-data.js</b> → วางต่อท้าย <b>}</b> ของชุดสุดท้าย ก่อน <b>];</b> ท้ายไฟล์';
+ const r=await Swal.fire({icon:'info',title:'คัดลอกไปวางในไฟล์เอง',width:640,showCancelButton:true,confirmButtonText:'📋 คัดลอก',cancelButtonText:'ปิด',
+  html:'<div style="text-align:left;font-size:.9rem">'+(why?'<div style="color:var(--no);margin-bottom:6px">'+why+'</div>':'')+'เบราว์เซอร์นี้เขียนไฟล์ตรงๆ ไม่ได้ (ใช้ Chrome/Edge บนคอมจะบันทึกอัตโนมัติ)<br>'+how+'<textarea id="aq-o" class="aqi" readonly style="margin-top:8px">'+snip.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</textarea></div>'});
+ if(r.isConfirmed){try{await navigator.clipboard.writeText(snip);toast('คัดลอกแล้ว 📋')}catch(e){const a=document.getElementById('aq-o');al('คัดลอกเอง','แตะในกล่องข้อความ เลือกทั้งหมด แล้วคัดลอก','info')}}}
+// ===== วางข้อสอบเป็นโค้ด JS ทั้งชุด =====
+const AQT='// ===== ชุดข้อสอบใหม่ =====\n{\n  name:"ชุดข้อสอบใหม่",\n  icon:"📗",\n  color:"#27ae60",\n  q:[\n    ["โจทย์ข้อที่ 1", ["ตัวเลือก ก", "ตัวเลือก ข", "ตัวเลือก ค", "ตัวเลือก ง"], 0]\n  ]\n},';
+function aqSw(v){const d=document,t=d.getElementById('aq-t'),l=d.getElementById('aq-lb'),js=v=='js';
+ d.getElementById('aq-nw').style.display=v=='new'?'block':'none';
+ if(!t.dataset.ph){t.dataset.ph=t.placeholder;l.dataset.tx=l.textContent}
+ t.placeholder=js?AQT:t.dataset.ph;
+ l.textContent=js?'วางโค้ด JS ของชุด { name, icon, color, q:[...] } · วางได้หลายชุด คั่นด้วย , · ข้อที่ถูกนับจาก 0 (0=ก 1=ข 2=ค 3=ง 4=จ)':l.dataset.tx}
+async function aqForm(){const d=document,m=d.getElementById('aq-m'),t=d.getElementById('aq-t'),h=d.getElementById('aq-hint');
+ m.value='js';aqSw('js');t.value=AQT;
+ try{await navigator.clipboard.writeText(AQT);h.textContent='ใส่แบบฟอร์มในช่องแล้ว + คัดลอกแล้ว 📋'}catch(e){h.textContent='ใส่แบบฟอร์มในช่องแล้ว (แก้ในช่องได้เลย)'}}
+function aqParseSets(txt){let r;
+ try{r=new Function('"use strict";return ['+txt+'\n]')()}catch(e){throw new Error('อ่านโค้ดไม่ได้: '+e.message)}
+ r=r.filter(()=>true);
+ if(r.length==1&&Array.isArray(r[0])&&r[0].length&&r[0].every(x=>x&&typeof x=='object'&&!Array.isArray(x)))r=r[0];
+ if(!r.length)throw new Error('ยังไม่ได้วางโค้ดชุดข้อสอบ');
+ return r.map((b,i)=>{const e=m=>{throw new Error('ชุดที่ '+(i+1)+': '+m)};
+  if(!b||typeof b!='object'||Array.isArray(b))e('ต้องเป็น { name:"...", icon:"...", color:"#rrggbb", q:[...] }');
+  if(typeof b.name!='string'||!b.name.trim())e('ยังไม่ได้ใส่ name');
+  if(!Array.isArray(b.q)||!b.q.length)e('ยังไม่มีข้อสอบใน q:[ ]');
+  const color=b.color==null?'#6c5ce7':b.color;if(typeof color!='string'||!/^#[0-9a-fA-F]{6}$/.test(color))e('color ต้องเป็นรหัสสี 6 หลัก เช่น "#27ae60"');
+  let rows;try{rows=aqParse(JSON.stringify(b.q).slice(1,-1))}catch(x){e(x.message)}
+  return{name:b.name.trim(),icon:(typeof b.icon=='string'&&b.icon.trim())||'📝',color,q:rows}})}
+async function addQ(){
+ const opts=S.map((n,k)=>'<option value="'+k+'">เพิ่มเข้าชุด: '+String(n).replace(/</g,'&lt;')+' ('+ids(j=>Q[j][0]==k).length+' ข้อ)</option>').join('');
+ const ex='["โจทย์ข้อที่ 1", ["ตัวเลือก ก", "ตัวเลือก ข", "ตัวเลือก ค", "ตัวเลือก ง"], 2],\n["โจทย์ข้อที่ 2", ["ก", "ข", "ค", "ง"], 0],';
+ const r=await Swal.fire({title:'➕ เพิ่มข้อสอบ',width:640,showCancelButton:true,confirmButtonText:'บันทึกลงไฟล์',cancelButtonText:'ยกเลิก',focusConfirm:false,
+  html:'<div style="text-align:left"><label class="aql">เพิ่มไปที่</label><select id="aq-m" class="aqi" onchange="aqSw(this.value)"><option value="new">➕ สร้างชุดใหม่ (กรอกชื่อ + วางข้อสอบเป็นแถว)</option><option value="js">📦 วางเป็นโค้ด JS ทั้งชุด (แบบฟอร์ม)</option>'+opts+'</select><div style="margin:8px 0 2px"><button type="button" class="ib" onclick="aqForm()">📋 ขอแบบฟอร์ม JS</button> <span id="aq-hint" class="m"></span></div>'
+  +'<div id="aq-nw"><label class="aql">ชื่อชุด</label><input id="aq-n" class="aqi" placeholder="เช่น วิชาภาษาไทย ชุดที่ 11"><div style="display:flex;gap:10px"><div style="flex:1"><label class="aql">ไอคอน</label><input id="aq-i" class="aqi" value="📝"></div><div style="flex:1"><label class="aql">สี</label><input id="aq-c" type="color" class="aqi" value="#6c5ce7" style="height:42px;padding:3px"></div></div></div>'
+  +'<label class="aql" id="aq-lb">ข้อสอบ (แถวละข้อ · ข้อที่ถูกนับจาก 0: 0=ก 1=ข 2=ค 3=ง 4=จ)</label><textarea id="aq-t" class="aqi" spellcheck="false" placeholder="'+ex.replace(/"/g,'&quot;')+'"></textarea></div>',
+  preConfirm:()=>{try{const g=id=>document.getElementById(id).value,mode=g('aq-m'),meta={name:g('aq-n').trim(),icon:g('aq-i').trim()||'📝',color:g('aq-c')||'#6c5ce7'};
+   if(mode=='js')return{mode:'js',meta:{},rows:aqParseSets(g('aq-t'))};
+   if(mode=='new'&&!meta.name)throw new Error('ใส่ชื่อชุดก่อน');const to=mode=='new'?null:+mode;if(to!==null)meta.to=to;return{mode:to===null?'new':'add',meta,rows:aqParse(g('aq-t'))}}catch(e){Swal.showValidationMessage(e.message);return false}}});
+ if(!r.isConfirmed)return;
+ return aqCommit(r.value.mode,r.value.meta,r.value.rows)}
+async function aqCommit(mode,meta,rows){const cnt=mode=='js'?rows.reduce((a,s)=>a+s.q.length,0):rows.length;
+ if(ld('ktgh','')){try{await ghSave(t=>aqBuild(t,mode,meta,rows),'เพิ่มข้อสอบ '+cnt+' ข้อ');home();await Swal.fire({icon:'success',title:'บันทึกขึ้น GitHub แล้ว ✅',text:GHNOTE,confirmButtonText:'ตกลง'})}catch(e){aqFallback(mode,meta,rows,'บันทึกขึ้น GitHub ไม่สำเร็จ: '+(e.message||e))}return}
+ if(!window.showOpenFilePicker)return aqFallback(mode,meta,rows);
+ try{
+  if(!FH){await Swal.fire({icon:'info',title:'เลือกไฟล์ user-data.js',text:'เลือกไฟล์ user-data.js ตัวที่ใช้กับหน้านี้ แล้วกด "แก้ไขไฟล์" เมื่อเบราว์เซอร์ถาม',confirmButtonText:'เลือกไฟล์'});
+   [FH]=await showOpenFilePicker({types:[{description:'user-data.js',accept:{'text/javascript':['.js']}}]})}
+  if(FH.name!='user-data.js'){const n=FH.name;FH=null;throw new Error('ไฟล์ที่เลือกชื่อ '+n+' (ต้องเป็น user-data.js)')}
+  if(await FH.requestPermission({mode:'readwrite'})!='granted'){FH=null;throw new Error('ไม่ได้รับอนุญาตให้แก้ไขไฟล์')}
+  const t=await(await FH.getFile()).text(),n=aqBuild(t,mode,meta,rows);
+  new Function(n);
+  const w=await FH.createWritable();await w.write(n);await w.close();
+  await Swal.fire({icon:'success',title:'บันทึกแล้ว ✅',text:'เพิ่ม '+cnt+' ข้อ ลงใน user-data.js · หน้าจะรีเฟรชเพื่อโหลดข้อสอบใหม่',confirmButtonText:'ตกลง'});
+  location.reload()
+ }catch(e){if(e&&e.name=='AbortError')return;aqFallback(mode,meta,rows,'บันทึกอัตโนมัติไม่สำเร็จ: '+(e.message||e))}}
+
+
+// ===== อัปโหลดไฟล์ข้อสอบ .js =====
+function pickFiles(accept,multi){return new Promise(res=>{const i=document.createElement('input');i.type='file';i.accept=accept;i.multiple=!!multi;i.style.display='none';document.body.appendChild(i);let d=0;
+ const fin=()=>{if(d)return;d=1;const f=[...(i.files||[])];i.remove();res(f)};
+ i.onchange=fin;i.oncancel=fin;window.addEventListener('focus',()=>setTimeout(fin,1500),{once:true});i.click()})}
+// รองรับ 3 แบบ: บล็อกชุด { name, icon, color, q:[...] } · window.X=[ชุด...] (เช่นไฟล์ EXTRA) · แถวข้อสอบล้วน ["โจทย์",[...],0] (ใช้ชื่อไฟล์เป็นชื่อชุด)
+// แปลงรูปแบบเก่า window.BASE={S:[ชื่อ],IC:[ไอคอน],CL:[สี],Q:[[เลขชุด,"โจทย์",[ตัวเลือก],ข้อถูก],...]} (+ window.EXTRA ถ้ามี) เป็นบล็อกชุด
+function aqFromBase(w){const B=w.BASE;if(!B||!Array.isArray(B.S)||!Array.isArray(B.Q))return null;
+ const col=c=>typeof c=='string'&&/^#[0-9a-fA-F]{6}$/.test(c)?c:'#6c5ce7';
+ const sets=B.S.map((n,k)=>({name:String(n),icon:(B.IC&&B.IC[k])||'📝',color:col(B.CL&&B.CL[k]),q:[]}));
+ B.Q.forEach(r=>{if(Array.isArray(r)&&sets[r[0]])sets[r[0]].q.push([r[1],r[2],r[3]])});
+ (Array.isArray(w.EXTRA)?w.EXTRA:[]).forEach(b=>{if(!b||!Array.isArray(b.q))return;let k;
+  if(b.to!=null){k=b.to;if(!sets[k])return}else{sets.push({name:String(b.name||'ชุดใหม่'),icon:b.icon||'📝',color:col(b.color),q:[]});k=sets.length-1}
+  b.q.forEach(r=>sets[k].q.push([r[0],r[1],r[2]]))});
+ return sets.filter(s=>s.q.length)}
+// รองรับ: บล็อกชุด { name, icon, color, q:[...] } · window.X=[ชุด...] (เช่น BASE_SETS/EXTRA) · รูปแบบเก่า window.BASE={S,IC,CL,Q} · แถวข้อสอบล้วน ["โจทย์",[...],0] (ใช้ชื่อไฟล์เป็นชื่อชุด)
+function aqFileParse(t,name){let sets=null,e1,e3;
+ try{sets=aqParseSets(t)}catch(e){e1=e}
+ if(!sets){try{const w={};new Function('window',t)(w);let ss=null;
+   if(!Array.isArray(w.BASE_SETS)){const fb=aqFromBase(w);if(fb&&fb.length)ss=fb}
+   if(!ss){const c=[];Object.keys(w).forEach(k=>{if(Array.isArray(w[k]))c.push(...w[k])});
+    const x=c.filter(b=>b&&typeof b=='object'&&!Array.isArray(b)&&Array.isArray(b.q)&&b.name);if(x.length)ss=x}
+   if(ss)sets=aqParseSets(JSON.stringify(ss))}catch(e){e1=e1||e}}
+ if(!sets){try{sets=[{name:name.replace(/\.[^.]+$/,''),icon:'📝',color:'#6c5ce7',q:aqParse(t)}]}catch(e){e3=e;e1=e1||e}}
+ if(!sets)throw (e3&&/^\s*(\/\/[^\n]*\n\s*)*\[/.test(t)?e3:e1)||new Error('ไม่พบข้อสอบในไฟล์');
+ return sets}
+async function addFile(){
+ const fs=await pickFiles('.js,.json,.txt,text/javascript,application/json,text/plain',true);
+ if(!fs.length)return;
+ const all=[],bad=[];
+ for(const f of fs){try{all.push(...aqFileParse(await f.text(),f.name))}catch(e){bad.push(f.name+' — '+(e.message||e))}}
+ if(!all.length)return al('อ่านไฟล์ไม่ได้',bad.map(escH).join('<br>')+'<br><span class="m">รองรับ: บล็อก { name, icon, color, q:[...] } · window.X=[...] · window.BASE={S,IC,CL,Q} · หรือแถวข้อสอบล้วน</span>','error');
+ const tot=all.reduce((a,s)=>a+s.q.length,0),have=new Set(S.map(String)),dup=all.filter(s=>have.has(s.name)).length;
+ const r=await Swal.fire({title:'📄 พบข้อสอบในไฟล์',width:560,showCancelButton:true,confirmButtonText:'บันทึกที่เลือก',cancelButtonText:'ยกเลิก',
+  html:'<div class="mg"><div class="m" style="margin-bottom:6px">จาก '+fs.length+' ไฟล์ · พบ <b>'+all.length+'</b> ชุด รวม <b>'+tot+'</b> ข้อ'+(dup?' · <span style="color:var(--no)">ชื่อซ้ำกับที่มีอยู่ '+dup+' ชุด (ไม่ได้ติ๊กให้)</span>':'')+'</div>'
+  +'<div style="display:flex;gap:8px;margin-bottom:8px"><button type="button" class="sybtn" style="margin:0" onclick="document.querySelectorAll(\'.afc\').forEach(c=>c.checked=true)">เลือกทั้งหมด</button><button type="button" class="sybtn" style="margin:0" onclick="document.querySelectorAll(\'.afc\').forEach(c=>c.checked=false)">ไม่เลือกเลย</button></div>'
+  +'<div class="mg-list">'+all.map((s,i)=>'<label class="mg-i" style="min-height:0;cursor:pointer"><input type="checkbox" class="afc" data-i="'+i+'"'+(have.has(s.name)?'':' checked')+' style="width:20px;height:20px;flex:none"><span class="mg-ic" style="background:'+escH(s.color)+'22">'+escH(s.icon)+'</span><span class="mg-tx"><b>'+escH(s.name)+'</b><small>'+s.q.length+' ข้อ'+(have.has(s.name)?' · ⚠️ ชื่อซ้ำกับชุดที่มีอยู่':'')+'</small></span></label>').join('')+'</div>'
+  +(bad.length?'<div style="color:var(--no);font-size:.85rem;margin-top:6px">⚠️ อ่านไม่ได้ '+bad.length+' ไฟล์:<br>'+bad.map(escH).join('<br>')+'</div>':'')+'</div>',
+  preConfirm:()=>{const ix=[...document.querySelectorAll('.afc:checked')].map(c=>+c.dataset.i);if(!ix.length){Swal.showValidationMessage('ติ๊กเลือกอย่างน้อย 1 ชุด');return false}return ix.map(i=>all[i])}});
+ if(!r.isConfirmed)return;
+ return aqCommit('js',{},r.value)}
+
+// ===== การจัดการ: ใส่รหัส 6 หลัก → เพิ่ม/ลบชุดข้อสอบ =====
+const MPIN='542544';
+function aqSet(b){return '{\n'+(b.to!=null?'  to:'+b.to+',\n':'  name:'+JSON.stringify(b.name)+',\n  icon:'+JSON.stringify(b.icon||'📝')+',\n  color:'+JSON.stringify(b.color||'#6c5ce7')+',\n')+'  q:[\n'+b.q.map(x=>'    '+JSON.stringify(x)).join(',\n')+'\n  ]\n}'}
+function aqExtraText(arr){return 'window.EXTRA=[\n'+arr.map(aqSet).join(',\n')+(arr.length?'\n':'')+'];\n'}
+// ลบชุด k: ลบรายการที่สร้างชุดนั้น + รายการที่เพิ่มเข้าชุดนั้น และเลื่อนเลขชุดที่อยู่หลังขึ้น 1
+function aqDrop(cur,k,nb,name){
+ let n=-1,p=-1;cur.forEach((b,i)=>{if(b.to==null){n++;if(n==k-nb)p=i}});
+ if(p<0||cur[p].name!==name)throw new Error('ไม่พบชุดนี้ในไฟล์ (ไฟล์อาจไม่ตรงกับที่โหลดอยู่ ลองรีเฟรชแล้วทำใหม่)');
+ return cur.filter((b,i)=>i!=p&&b.to!==k).map(b=>b.to!=null&&b.to>k?Object.assign({},b,{to:b.to-1}):b)}
+function aqRemove(t,k,nb,name){
+ const m=t.match(/window\.EXTRA\s*=\s*\[/);if(!m)throw new Error('ไม่พบ window.EXTRA ในไฟล์');
+ let cur;try{cur=new Function('window',t+'\n;return window.EXTRA')({})}catch(x){throw new Error('อ่าน user-data.js ไม่ได้: '+x.message)}
+ if(!Array.isArray(cur))throw new Error('อ่าน window.EXTRA ไม่ได้');
+ let out=t.slice(0,m.index)+aqExtraText(aqDrop(cur,k,nb,name));
+ const mm=metaGet(out);if(Object.keys(mm.names).length||mm.order.length||mm.cats||mm.icons||mm.colors)out=metaSet(out,metaDrop(mm,k));
+ return out}
+function delMap(k){const nw=[];let c=0;Q.forEach(q=>{nw.push(q[0]==k?-1:c++)});return nw}
+function remapAfterDelete(k){
+ const nw=[];let c=0;Q.forEach((q,j)=>{if(q[0]==k)nw.push(-1);else nw.push(c++)});
+ const f=j=>nw[j]===undefined?-1:nw[j],g=j=>j<k?j:j>k?j-1:-1;
+ sv('ktm',[...M].map(f).filter(j=>j>=0));sv('ktbk',[...BK].map(f).filter(j=>j>=0));sv('ktcs',[...cs].map(g).filter(j=>j>=0))}
+const MENU=[
+ ['ข้อสอบ',[['addQ','✍️','เพิ่มชุดข้อสอบ','พิมพ์/วางข้อสอบเอง หรือเพิ่มเข้าชุดเดิม'],['addFile','📄','อัปโหลดไฟล์ .js','เลือกไฟล์ข้อสอบจากเครื่อง · เพิ่มได้หลายไฟล์พร้อมกัน'],['delSet','🗑️','ลบชุดข้อสอบ','ลบได้เฉพาะชุดที่เพิ่มเอง','dn']]],
+ ['ปรับแต่ง',[['renameSet','✏️','เปลี่ยนชื่อชุด','แก้ชื่อที่แสดงของแต่ละชุด'],['catManage','🗂️','หมวดหมู่ / ลำดับ','จัดกลุ่มและเรียงลำดับชุดข้อสอบ'],['styleSets','🎨','ไอคอนและสี','เปลี่ยนไอคอน/สีของแต่ละชุด']]],
+ ['ข้อมูลและการเชื่อมต่อ',[['dataFile','📁','ไฟล์ข้อมูล','user-data.js · ดาวน์โหลดสำรอง · กู้คืน'],['ghSet','🔗','เชื่อม GitHub','บันทึกขึ้น repo อัตโนมัติ','gh']]]];
+function mgHtml(){const gh=!!ld('ktgh','');
+ return '<div class="mg"><div class="syx" data-full="1"></div>'+MENU.map(g=>'<div class="mg-h">'+g[0]+'</div>'+g[1].map(m=>'<button class="mg-i'+(m[4]=='dn'?' dn':'')+'" onclick="Swal.close({isConfirmed:true,isDenied:false,isDismissed:false,value:\''+m[0]+'\'})"><span class="mg-ic">'+m[1]+'</span><span class="mg-tx"><b>'+m[2]+'</b><small>'+m[3]+'</small></span>'+(m[4]=='gh'?'<span class="mg-bd'+(gh?' g':'')+'">'+(gh?'เชื่อมแล้ว':'ยังไม่เชื่อม')+'</span>':'<span class="mg-go">›</span>')+'</button>').join('')).join('')+'</div>'}
+// เมนูตั้งค่าค้างอยู่จนกว่าจะกด “ปิด” / “ยกเลิก” (คลิกพื้นหลังหรือ Esc ไม่ปิด) · ทำงานเสร็จแล้วกลับมาที่เมนูเดิม
+async function manage(){
+ if(!window.Swal){if(prompt('ใส่รหัส 6 หลัก')===MPIN)return addQ();return}
+ if(MG)return;MG=1;
+ try{
+  const p=await Swal.fire({title:'🔒 การจัดการ',text:'ใส่รหัส 6 หลักเพื่อเข้าใช้งาน',input:'password',inputAttributes:{inputmode:'numeric',maxlength:6,autocomplete:'off',autocapitalize:'off'},showCancelButton:true,confirmButtonText:'ยืนยัน',cancelButtonText:'ยกเลิก',inputValidator:v=>v===MPIN?undefined:(String(v).length<6?'ใส่รหัสให้ครบ 6 หลัก':'รหัสไม่ถูกต้อง')});
+  if(!p.isConfirmed)return;
+  for(;;){
+   const r=await Swal.fire({title:'⚙️ การจัดการ',width:560,showConfirmButton:false,showCancelButton:true,cancelButtonText:'ปิด',html:mgHtml(),didOpen:()=>syPaint()});
+   if(!r.isConfirmed||!r.value)break;
+   try{await window[r.value]()}catch(e){if(e&&e.name!='AbortError')await al('เกิดข้อผิดพลาด',escH(e.message||e),'error')}
+  }
+ }finally{MG=0}}
+// ===== ไฟล์ข้อมูล (user-data.js): ดูสถานะ / ดาวน์โหลดสำรอง / กู้คืนจากไฟล์ =====
+function udText(){const m=metaObj(MT),has=Object.keys(m.names).length||m.order.length||m.cats||m.icons||m.colors;
+ return UDTPL.replace(/window\.EXTRA[\s\S]*$/,'')+(has?'window.META='+JSON.stringify(m)+';//META\n':'')+aqExtraText(window.EXTRA||[])}
+async function dataFile(){
+ const ex=window.EXTRA||[],ns=ex.filter(b=>b.to==null).length,nq=ex.reduce((a,b)=>a+b.q.length,0),kb=Math.max(1,Math.round(new Blob([udText()]).size/1024)),gh=!!ld('ktgh','');
+ const r=await Swal.fire({title:'📁 ไฟล์ข้อมูล',width:560,showCancelButton:true,showDenyButton:true,confirmButtonText:'⬇️ ดาวน์โหลดสำรอง',denyButtonText:'⬆️ กู้คืนจากไฟล์',cancelButtonText:'กลับ',
+  html:'<div style="text-align:left;font-size:.9rem;line-height:1.7"><b>exam-data.js</b> — ข้อสอบชุดตั้งต้น (ชุดที่ 1–20) ไม่ถูกแก้ตอนบันทึก<br><b>user-data.js</b> — เก็บทุกอย่างที่ตั้งค่าในเมนูนี้ (ชื่อ/หมวด/ไอคอน/สี/ชุดที่เพิ่ม/ลบ)<div style="margin:8px 0;padding:10px 12px;border-radius:12px;background:rgba(127,127,127,.12)">ชุดที่เพิ่มเอง <b>'+ns+'</b> ชุด · ข้อสอบในไฟล์ <b>'+nq+'</b> ข้อ · ขนาดประมาณ <b>'+kb+' KB</b><br>บันทึกขึ้น GitHub: '+(gh?'<span style="color:var(--ok)">✅ เชื่อมแล้ว</span>':'<span class="m">ยังไม่ได้เชื่อม</span>')+(ld('ktud',null)?'<br><span style="color:var(--a)">⏳ เครื่องนี้แสดงข้อมูลล่าสุดที่เพิ่งบันทึก · รอเว็บอัปเดตอยู่ (หายเองเมื่อทัน)</span>':'')+'</div><span class="m">การบันทึกจะอ่าน/เขียนเฉพาะ user-data.js จึงเร็วกว่าเดิมที่ต้องเขียน exam-data.js ทั้งไฟล์</span></div>'});
+ if(r.isConfirmed){const bl=new Blob([udText()],{type:'text/javascript'}),a=document.createElement('a');a.href=URL.createObjectURL(bl);a.download='user-data.js';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000);toast('ดาวน์โหลดไฟล์สำรองแล้ว ⬇️')}
+ else if(r.isDenied)await udRestore()}
+async function udRestore(){
+ const [f]=await pickFiles('.js,text/javascript',false);
+ if(!f)return;
+ const t=await f.text();
+ try{const w={};new Function('window',t)(w);if(!Array.isArray(w.EXTRA))throw new Error('ไม่พบ window.EXTRA ในไฟล์')}catch(e){return al('ไฟล์ไม่ถูกต้อง',escH(e.message||e),'error')}
+ if(!await cf('กู้คืนจาก “'+f.name+'” ?','ข้อมูลใน user-data.js ปัจจุบันจะถูกแทนที่ทั้งหมด','กู้คืน','warning'))return;
+ if(ld('ktgh','')){try{await ghSave(()=>t,'กู้คืนไฟล์ข้อมูล');home();await al('บันทึกขึ้น GitHub แล้ว ✅',GHNOTE,'success')}catch(e){await al('ไม่สำเร็จ',escH(e.message||e),'error')}return}
+ if(window.showOpenFilePicker){try{await pickFH();const w=await FH.createWritable();await w.write(t);await w.close();await al('กู้คืนแล้ว ✅','หน้าจะรีเฟรชเพื่อโหลดข้อมูลใหม่','success');location.reload()}catch(e){if(e&&e.name=='AbortError')return;await al('ไม่สำเร็จ',escH(e.message||e),'error')}return}
+ await al('เบราว์เซอร์นี้เขียนไฟล์ตรงๆ ไม่ได้','นำไฟล์ที่เลือกไปวางทับ user-data.js เอง แล้วรีเฟรชหน้า','info')}
+async function delSet(){
+ const nb=BASE.S.length,ks=S.map((n,k)=>k).filter(k=>k>=nb);
+ if(!ks.length)return al('ยังไม่มีชุดที่ลบได้','ลบได้เฉพาะชุดที่สร้างผ่านเมนูการจัดการ','info');
+ const opts={};ks.forEach(k=>opts[k]=S[k]+' · '+ids(j=>Q[j][0]==k).length+' ข้อ');
+ const r=await Swal.fire({title:'🗑️ ลบชุดข้อสอบ',text:'เลือกชุดที่ต้องการลบ',input:'select',inputOptions:opts,inputPlaceholder:'เลือกชุดข้อสอบ',showCancelButton:true,confirmButtonText:'ถัดไป',cancelButtonText:'ยกเลิก',inputValidator:v=>v===''?'เลือกชุดก่อน':undefined});
+ if(!r.isConfirmed)return;
+ const k=+r.value,name=S[k],oname=S0[k],cnt=ids(j=>Q[j][0]==k).length;
+ if(!await cf('ลบ “'+name+'” ?',cnt+' ข้อ จะถูกลบออกจาก user-data.js และความคืบหน้าของชุดนี้จะหายไป ย้อนกลับไม่ได้','ลบเลย','warning'))return;
+ const fb=async why=>{let txt;try{txt=(Object.keys(MT.names||{}).length||(MT.order||[]).length||MT.cats||MT.icons||MT.colors?'window.META='+JSON.stringify(metaDrop(MT,k))+';//META\n':'')+aqExtraText(aqDrop(window.EXTRA||[],k,nb,oname))}catch(x){return al('ลบไม่สำเร็จ',x.message,'error')}
+  const r2=await Swal.fire({icon:'info',title:'แก้ไฟล์เอง',width:640,showCancelButton:true,confirmButtonText:'📋 คัดลอก',cancelButtonText:'ปิด',html:'<div style="text-align:left;font-size:.9rem">'+(why?'<div style="color:var(--no);margin-bottom:6px">'+why+'</div>':'')+'เปิด <b>user-data.js</b> → แทนที่ตั้งแต่ <b>window.EXTRA</b> จนจบไฟล์ ด้วยข้อความนี้<textarea id="aq-o" class="aqi" readonly style="margin-top:8px">'+txt.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</textarea></div>'});
+  if(r2.isConfirmed){try{await navigator.clipboard.writeText(txt);toast('คัดลอกแล้ว 📋')}catch(x){al('คัดลอกเอง','แตะในกล่องข้อความ เลือกทั้งหมด แล้วคัดลอก','info')}}};
+ if(ld('ktgh','')){try{const nw=delMap(k),len=S.length;await ghSave(t=>aqRemove(t,k,nb,oname),'ลบชุดข้อสอบ “'+oname+'”');applyPD({k,len,nw});home();await Swal.fire({icon:'success',title:'ลบขึ้น GitHub แล้ว ✅',html:GHNOTE+'<br><span class="m">ความคืบหน้าของชุดอื่นคงเดิม</span>',confirmButtonText:'ตกลง'})}catch(x){fb('ลบขึ้น GitHub ไม่สำเร็จ: '+(x.message||x))}return}
+ if(!window.showOpenFilePicker)return fb();
+ try{
+  if(!FH){await Swal.fire({icon:'info',title:'เลือกไฟล์ user-data.js',text:'เลือกไฟล์ user-data.js ตัวที่ใช้กับหน้านี้ แล้วกด "แก้ไขไฟล์" เมื่อเบราว์เซอร์ถาม',confirmButtonText:'เลือกไฟล์'});
+   [FH]=await showOpenFilePicker({types:[{description:'user-data.js',accept:{'text/javascript':['.js']}}]})}
+  if(FH.name!='user-data.js'){const n=FH.name;FH=null;throw new Error('ไฟล์ที่เลือกชื่อ '+n+' (ต้องเป็น user-data.js)')}
+  if(await FH.requestPermission({mode:'readwrite'})!='granted'){FH=null;throw new Error('ไม่ได้รับอนุญาตให้แก้ไขไฟล์')}
+  const t=await(await FH.getFile()).text(),n=aqRemove(t,k,nb,oname);
+  new Function(n);
+  const w=await FH.createWritable();await w.write(n);await w.close();
+  remapAfterDelete(k);
+  await Swal.fire({icon:'success',title:'ลบแล้ว ✅',text:'ลบชุด “'+name+'” ออกจาก user-data.js · หน้าจะรีเฟรช',confirmButtonText:'ตกลง'});
+  location.reload()
+ }catch(x){if(x&&x.name=='AbortError')return;fb('ลบอัตโนมัติไม่สำเร็จ: '+(x.message||x))}}
+// ===== เปลี่ยนชื่อ / จัดลำดับชุดข้อสอบ + บันทึกขึ้น GitHub =====
+const GH={repo:'ZEROXGCK/assistanttest',path:'user-data.js',br:'main'};
+const GHNOTE='คอมมิตลง user-data.js ใน GitHub แล้ว · เครื่องนี้เห็นผลทันที · เครื่องอื่น/GitHub Pages ใช้เวลาประมาณ 1–2 นาที แล้วรีเฟรชหน้า';
+const ghH=(tk,a)=>({'Authorization':'Bearer '+tk,'Accept':a||'application/vnd.github+json'});
+async function ghReq(tk,url,opt){const r=await fetch(url,Object.assign({headers:ghH(tk),cache:'no-store'},opt));if(!r.ok){let m='';try{m=(await r.json()).message}catch(e){}const e=new Error('GitHub '+r.status+(m?' · '+m:''));e.status=r.status;throw e}return r.json()}
+const b64d=s=>new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g,'')),c=>c.charCodeAt(0)));
+const b64e=s=>{const u=new TextEncoder().encode(s);let b='';for(let i=0;i<u.length;i+=8192)b+=String.fromCharCode.apply(null,u.subarray(i,i+8192));return btoa(b)};
+const UDTPL='// ไฟล์ข้อมูลที่แก้ไขจากเมนูตั้งค่า — วางไว้โฟลเดอร์เดียวกับ index.html\n// เก็บ: window.META (ชื่อชุด/ลำดับ/หมวดหมู่/ไอคอน/สี) + window.EXTRA (ชุดข้อสอบที่เพิ่มเอง)\n\nwindow.EXTRA=[\n];\n';
+async function ghSave0(fn,msg){const tk=ld('ktgh','');if(!tk)throw new Error('ยังไม่ได้เชื่อม GitHub');
+ const url='https://api.github.com/repos/'+GH.repo+'/contents/'+GH.path;
+ let j=null,text;
+ try{j=await ghReq(tk,url+'?ref='+GH.br)}catch(e){if(e.status!=404)throw e}
+ if(!j)text=UDTPL;
+ else if(j.content&&j.encoding=='base64')text=b64d(j.content);
+ else{const r=await fetch(url+'?ref='+GH.br,{headers:ghH(tk,'application/vnd.github.raw+json'),cache:'no-store'});if(!r.ok)throw new Error('GitHub '+r.status);text=await r.text()}
+SY.msg='เขียนไฟล์ขึ้น GitHub…';syPaint();
+ const n=fn(text);new Function(n);
+ const body={message:msg,content:b64e(n),branch:GH.br};if(j)body.sha=j.sha;
+ await ghReq(tk,url,{method:'PUT',headers:Object.assign(ghH(tk),{'Content-Type':'application/json'}),body:JSON.stringify(body)});
+ const sg=t=>{const w={};new Function('window',t)(w);return udSig(w.META,w.EXTRA)},bs=sg(text),prev=ld('ktud',null);
+ const from=prev&&Array.isArray(prev.from)&&prev.ns===bs?[...new Set([...prev.from,bs])]:[bs];
+ {const now=Date.now(),ns=sg(n);sv('ktud',{from,ns,text:n,t:now});SYT=now;SYN=ns}
+ {const w={};new Function('window',n)(w);window.META=w.META;window.EXTRA=w.EXTRA;rebuildAll()}
+ return n}
+async function ghSave(fn,msg){SY={st:'saving',msg:'อ่านไฟล์จาก GitHub…'};syPaint();
+ try{const n=await ghSave0(fn,msg);SY={st:'idle'};return n}
+ catch(e){SY={st:'error',msg:String(e&&e.message||e)};setTimeout(()=>{if(SY.st=='error'){SY={st:'idle'};syPaint()}},12000);throw e}
+ finally{syPaint()}}
+// META = ชื่อที่แก้ + ลำดับการแสดง เก็บเป็นบรรทัดเดียวใน user-data.js (อยู่เหนือ window.EXTRA)
+const metaObj=m=>{const o={names:m.names||{},order:m.order||[]};if(Array.isArray(m.cats))o.cats=m.cats;if(m.icons&&Object.keys(m.icons).length)o.icons=m.icons;if(m.colors&&Object.keys(m.colors).length)o.colors=m.colors;return o};
+function metaGet(t){const a=[...t.matchAll(/^window\.META=(.*);\/\/META[ \t]*\r?$/gm)];const d={names:{},order:[]};if(!a.length)return d;try{return Object.assign(d,JSON.parse(a[a.length-1][1]))}catch(e){return d}}
+function metaSet(t,meta){const line='window.META='+JSON.stringify(metaObj(meta))+';//META\n';
+ t=t.replace(/^window\.META=.*;\/\/META[ \t]*\r?$\n?/gm,'');
+ const m=t.match(/window\.EXTRA\s*=\s*\[/);if(!m)throw new Error('ไม่พบ window.EXTRA ในไฟล์');
+ return t.slice(0,m.index)+line+t.slice(m.index)}
+function metaDrop(meta,k){const names={};Object.keys(meta.names||{}).forEach(x=>{x=+x;if(x==k)return;names[x>k?x-1:x]=meta.names[x]});
+ const shM=o=>{const n={};Object.keys(o||{}).forEach(x=>{x=+x;if(x==k)return;n[x>k?x-1:x]=o[x]});return n};
+ const r={names,order:(meta.order||[]).filter(x=>x!=k).map(x=>x>k?x-1:x)};if(Array.isArray(meta.cats))r.cats=meta.cats.map(c=>Object.assign({},c,{sets:(c.sets||[]).filter(x=>x!=k).map(x=>x>k?x-1:x)}));if(meta.icons)r.icons=shM(meta.icons);if(meta.colors)r.colors=shM(meta.colors);return r}
+async function pickFH(){
+ if(!FH){await Swal.fire({icon:'info',title:'เลือกไฟล์ user-data.js',text:'เลือกไฟล์ user-data.js ตัวที่ใช้กับหน้านี้ แล้วกด "แก้ไขไฟล์" เมื่อเบราว์เซอร์ถาม',confirmButtonText:'เลือกไฟล์'});
+  [FH]=await showOpenFilePicker({types:[{description:'user-data.js',accept:{'text/javascript':['.js']}}]})}
+ if(FH.name!='user-data.js'){const n=FH.name;FH=null;throw new Error('ไฟล์ที่เลือกชื่อ '+n+' (ต้องเป็น user-data.js)')}
+ if(await FH.requestPermission({mode:'readwrite'})!='granted'){FH=null;throw new Error('ไม่ได้รับอนุญาตให้แก้ไขไฟล์')}}
+async function saveMeta(meta,msg){
+ meta=Object.assign({cats:MT.cats||null,icons:MT.icons||{},colors:MT.colors||{}},meta);
+ const fn=t=>metaSet(t,meta);
+ const apply=()=>{MT.names=meta.names;MT.order=meta.order;MT.cats=Array.isArray(meta.cats)?meta.cats:null;MT.icons=meta.icons||{};MT.colors=meta.colors||{};IC.forEach((v,k)=>{const x=MT.icons[k];IC[k]=x&&String(x).trim()?x:IC0[k]});CL.forEach((v,k)=>{const x=MT.colors[k];CL[k]=x&&String(x).trim()?x:CL0[k]});S.forEach((s,k)=>{const v=meta.names[k];S[k]=v!=null&&String(v).trim()?v:S0[k]});home()};
+ const man=async why=>{const txt='window.META='+JSON.stringify(metaObj(meta))+';//META';
+  const r2=await Swal.fire({icon:'info',title:'แก้ไฟล์เอง',width:640,showCancelButton:true,confirmButtonText:'📋 คัดลอก',cancelButtonText:'ปิด',html:'<div style="text-align:left;font-size:.9rem">'+(why?'<div style="color:var(--no);margin-bottom:6px">'+why+'</div>':'')+'เปิด <b>user-data.js</b> → วางบรรทัดนี้ไว้เหนือ <b>window.EXTRA</b> (ลบบรรทัด <b>window.META</b> เดิมออกถ้ามี)<textarea id="aq-o" class="aqi" readonly style="margin-top:8px">'+txt.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</textarea></div>'});
+  if(r2.isConfirmed){try{await navigator.clipboard.writeText(txt);toast('คัดลอกแล้ว 📋')}catch(x){al('คัดลอกเอง','แตะในกล่องข้อความ เลือกทั้งหมด แล้วคัดลอก','info')}}};
+ if(ld('ktgh','')){try{await ghSave(fn,msg);apply();await Swal.fire({icon:'success',title:'บันทึกขึ้น GitHub แล้ว ✅',text:GHNOTE,confirmButtonText:'ตกลง'});return}catch(e){return man('บันทึกขึ้น GitHub ไม่สำเร็จ: '+(e.message||e))}}
+ if(window.showOpenFilePicker){try{await pickFH();const t=await(await FH.getFile()).text(),n=fn(t);new Function(n);const w=await FH.createWritable();await w.write(n);await w.close();apply();await Swal.fire({icon:'success',title:'บันทึกแล้ว ✅',text:'บันทึกลง user-data.js แล้ว',confirmButtonText:'ตกลง'});return}catch(e){if(e&&e.name=='AbortError')return;return man('บันทึกอัตโนมัติไม่สำเร็จ: '+(e.message||e))}}
+ return man('')}
+async function ghSet(){
+ const has=!!ld('ktgh','');
+ const r=await Swal.fire({title:'🔗 เชื่อม GitHub',width:560,showCancelButton:true,showDenyButton:has,confirmButtonText:'ทดสอบและบันทึก',denyButtonText:'ลบโทเคน',cancelButtonText:'ปิด',
+  html:'<div style="text-align:left;font-size:.88rem;line-height:1.6">'+(has?'<div style="color:var(--ok);margin-bottom:6px">✅ เชื่อมแล้ว — ใส่โทเคนใหม่เพื่อเปลี่ยน</div>':'')+'บันทึกลง <b>'+GH.repo+'/'+GH.path+'</b> ตรงๆ<br>1) GitHub → Settings → Developer settings → <b>Fine-grained tokens</b> → Generate<br>2) เลือก repo <b>assistanttest</b> เท่านั้น · Permissions: <b>Contents = Read and write</b><br>3) คัดลอกโทเคนมาวางด้านล่าง<br><span class="m">โทเคนเก็บในเบราว์เซอร์เครื่องนี้เท่านั้น ไม่ได้ฝังในโค้ด</span><input id="gh-t" type="password" class="aqi" autocomplete="off" placeholder="github_pat_..." style="margin-top:8px"></div>',
+  preConfirm:async()=>{const v=document.getElementById('gh-t').value.trim();if(!v){Swal.showValidationMessage('วางโทเคนก่อน');return false}
+   try{const j=await ghReq(v,'https://api.github.com/repos/'+GH.repo);if(j.permissions&&!j.permissions.push){Swal.showValidationMessage('โทเคนนี้ยังไม่มีสิทธิ์เขียน (ต้องเป็น Contents: Read and write)');return false}return v}catch(e){Swal.showValidationMessage('ใช้โทเคนไม่ได้: '+e.message);return false}}});
+ if(r.isConfirmed){sv('ktgh',r.value);toast('เชื่อม GitHub แล้ว ✅')}
+ else if(r.isDenied){try{localStorage.removeItem('ktgh')}catch(e){}toast('ลบโทเคนแล้ว','info')}}
+async function renameSet(){
+ const o=OS(),esc=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+ const r=await Swal.fire({title:'✏️ แก้ไขชื่อชุดข้อสอบ',width:640,showCancelButton:true,confirmButtonText:'บันทึก',cancelButtonText:'ยกเลิก',focusConfirm:false,
+  html:'<div style="text-align:left;max-height:55vh;overflow:auto">'+o.map(k=>'<label class="aql">'+IC[k]+' ชุดที่ '+(k+1)+' · '+ids(j=>Q[j][0]==k).length+' ข้อ</label><input class="aqi rn" data-k="'+k+'" value="'+esc(S[k])+'">').join('')+'</div>',
+  preConfirm:()=>{const nm=Object.assign({},MT.names||{});let ch=0;
+   for(const e of document.querySelectorAll('.rn')){const k=+e.dataset.k,v=e.value.trim();if(!v){Swal.showValidationMessage('ชื่อชุดที่ '+(k+1)+' ว่างไม่ได้');return false}
+    const before=S[k];if(v===S0[k])delete nm[k];else nm[k]=v;if(v!==before)ch++}
+   if(!ch){Swal.showValidationMessage('ยังไม่ได้แก้ไขชื่อ');return false}return nm}});
+ if(r.isConfirmed)saveMeta({names:r.value,order:MT.order||[]},'แก้ไขชื่อชุดข้อสอบ')}
+// ===== หมวดหมู่ (ตั้งค่าได้) : เก็บใน META.cats =====
+const escH=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+const catDefault=()=>{const o=OS();return[
+ {id:'c1',name:'เลือกทีละฉบับ',icon:'',rand:false,sets:o.filter(k=>k<G)},
+ {id:'c2',name:'วิชาภาษาไทย',icon:'📚',rand:true,sets:o.filter(k=>k>=G&&k<H)},
+ {id:'c3',name:'ชุดข้อสอบวิชาภาษาไทย',icon:'📝',rand:true,sets:o.filter(k=>k>=H)}]};
+function catBase(){const raw=Array.isArray(MT.cats)&&MT.cats.length?MT.cats:catDefault(),seen=new Set();
+ return raw.map(c=>({id:c.id,name:c.name,icon:c.icon||'',rand:!!c.rand,sets:(c.sets||[]).filter(k=>Number.isInteger(k)&&k>=0&&k<S.length&&!seen.has(k)&&seen.add(k))}))}
+function catList(){const c=catBase(),seen=new Set(c.flatMap(x=>x.sets)),un=S.map((s,k)=>k).filter(k=>!seen.has(k));
+ return un.length?c.concat([{id:'_un',name:'ยังไม่จัดหมวด',icon:'📂',rand:false,sets:un}]):c}
+function catSec(c,ci){const a=c.sets;if(!a.length)return'';const t=ids(j=>a.includes(Q[j][0])),d=t.filter(j=>M.has(j)).length;
+ return `<h2>${c.icon?escH(c.icon)+' ':''}${escH(c.name)} <span class="m">· ${a.length} ชุด</span></h2>`
+ +(c.rand?`<div class="q3" style="grid-template-columns:repeat(2,1fr)"><button class="go" onclick="goCat(${ci},30)"><b>30</b><span>${I.shufS}สุ่มจากหมวดนี้</span></button><button class="go" onclick="goCat(${ci},60)"><b>60</b><span>${I.shufS}สุ่มจากหมวดนี้</span></button></div><div class="m" style="margin:8px 2px 4px">${t.length} ข้อ · ถูกแล้ว ${d} ข้อ</div>`:'')
+ +a.map(row).join('')}
+let CF=ld('ktcf','all');
+function chipBar(){const L=catList().filter(c=>c.sets.length),ok=CF=='all'||L.some(c=>c.id==CF),cur=ok?CF:'all';
+ return `<div class="chips">`+[{id:'all',name:'ทั้งหมด',icon:'📋',n:S.length}].concat(L.map(c=>({id:c.id,name:c.name,icon:c.icon,n:c.sets.length}))).map(c=>`<button class="chip${c.id==cur?' on':''}" onclick="setCat('${c.id}')">${c.icon?escH(c.icon)+' ':''}${escH(c.name)} <span class="m">${c.n}</span></button>`).join('')+`</div>`}
+function setCat(id){CF=id;sv('ktcf',id);const y=scrollY;home();scrollTo(0,y)}
+function goCat(ci,n){const c=catList()[ci];if(c)go(ids(j=>c.sets.includes(Q[j][0])),n)}
+let CM=[],CM0='';
+function cmHtml(){const all=new Set(CM.flatMap(c=>c.sets)),un=S.map((s,k)=>k).filter(k=>!all.has(k));
+ const opt=self=>'<option value="">ย้ายไป…</option>'+CM.map((c,i)=>i==self?'':`<option value="${i}">${escH((c.icon?c.icon+' ':'')+c.name)}</option>`).join('')+(self>=0?'<option value="-1">📂 ไม่จัดหมวด</option>':'');
+ const srow=(k,ci,n,len)=>`<div class="cmr"><span class="cmn">${IC[k]} ${escH(S[k].replace(/^ภาษาไทย · /,''))}</span>`+(ci>=0?`<button class="ib" ${n?'':'disabled'} onclick="cmMs(${ci},${n},-1)">▲</button><button class="ib" ${n<len-1?'':'disabled'} onclick="cmMs(${ci},${n},1)">▼</button>`:'')+`<select class="cms" onchange="cmTo(${k},this.value)">${opt(ci)}</select></div>`;
+ return CM.map((c,ci)=>`<div class="cmc"><div class="cmh"><input class="aqi cmi" maxlength="4" value="${escH(c.icon)}" oninput="CM[${ci}].icon=this.value" placeholder="🙂"><input class="aqi" value="${escH(c.name)}" oninput="CM[${ci}].name=this.value" placeholder="ชื่อหมวดหมู่"></div>
+<div class="cmh2"><label class="cmt"><input type="checkbox" ${c.rand?'checked':''} onchange="CM[${ci}].rand=this.checked"> ปุ่มสุ่ม 30/60 ข้อ</label><button class="ib" ${ci?'':'disabled'} onclick="cmMc(${ci},-1)">▲</button><button class="ib" ${ci<CM.length-1?'':'disabled'} onclick="cmMc(${ci},1)">▼</button><button class="ib" onclick="cmDel(${ci})">🗑️</button></div>`
+ +(c.sets.length?c.sets.map((k,n)=>srow(k,ci,n,c.sets.length)).join(''):'<div class="m" style="padding:6px 0">ยังไม่มีชุดในหมวดนี้ · ย้ายชุดเข้ามาจากหมวดอื่นได้</div>')+'</div>').join('')
+ +(un.length?'<div class="cmc"><b>📂 ยังไม่จัดหมวด</b> <span class="m">· ชุดเหล่านี้จะแสดงท้ายหน้าแรก</span>'+un.map(k=>srow(k,-1,0,0)).join('')+'</div>':'')}
+const cmR=()=>{const e=document.getElementById('cm-l');if(e)e.innerHTML=cmHtml()};
+function cmMs(ci,n,d){const a=CM[ci].sets,m=n+d;if(m<0||m>=a.length)return;[a[n],a[m]]=[a[m],a[n]];cmR()}
+function cmMc(ci,d){const m=ci+d;if(m<0||m>=CM.length)return;[CM[ci],CM[m]]=[CM[m],CM[ci]];cmR()}
+function cmTo(k,v){if(v==='')return;CM.forEach(c=>{c.sets=c.sets.filter(x=>x!=k)});if(+v>=0)CM[+v].sets.push(k);cmR()}
+function cmDel(ci){const c=CM[ci];CM.splice(ci,1);cmR();toast('ลบหมวด “'+(c.name||'ไม่มีชื่อ')+'” · ชุดข้อสอบย้ายไป ยังไม่จัดหมวด','info')}
+function cmAdd(){CM.push({id:'c'+Date.now().toString(36),name:'หมวดใหม่',icon:'📁',rand:false,sets:[]});cmR();const e=document.getElementById('cm-l');if(e)e.scrollTop=e.scrollHeight}
+async function catManage(){
+ CM=JSON.parse(JSON.stringify(catBase()));CM0=JSON.stringify(CM);
+ const r=await Swal.fire({title:'🗂️ จัดการหมวดหมู่',width:640,showCancelButton:true,showDenyButton:!!MT.cats,confirmButtonText:'บันทึก',denyButtonText:'คืนค่าเริ่มต้น',cancelButtonText:'ยกเลิก',focusConfirm:false,
+  html:'<div class="m" style="margin-bottom:6px">ตั้งชื่อหมวด · เลือกว่าให้มีปุ่มสุ่มไหม · ย้ายชุดข้อสอบระหว่างหมวด · กด ▲ ▼ เพื่อจัดลำดับ</div><button class="btn" style="margin:0 0 8px" onclick="cmAdd()">➕ เพิ่มหมวดหมู่</button><div id="cm-l" style="text-align:left;max-height:52vh;overflow:auto">'+cmHtml()+'</div>',
+  preConfirm:()=>{for(const c of CM){c.name=String(c.name||'').trim();c.icon=String(c.icon||'').trim();if(!c.name){Swal.showValidationMessage('มีหมวดที่ยังไม่ได้ตั้งชื่อ');return false}}
+   if(JSON.stringify(CM)===CM0){Swal.showValidationMessage('ยังไม่ได้แก้ไขอะไร');return false}
+   return JSON.parse(JSON.stringify(CM))}});
+ if(r.isConfirmed)saveMeta({names:MT.names||{},order:MT.order||[],cats:r.value},'จัดหมวดหมู่ชุดข้อสอบ');
+ else if(r.isDenied&&await cf('คืนค่าหมวดหมู่เริ่มต้น?','จะกลับไปใช้ 3 หมวดเดิม (ก.พ./ภาษาไทยแยกหัวข้อ/ชุดข้อสอบภาษาไทย)','คืนค่า','warning'))saveMeta({names:MT.names||{},order:MT.order||[],cats:null},'คืนค่าหมวดหมู่เริ่มต้น')}
+const orderSets=catManage;
+// ===== ไอคอน + สี ของแต่ละชุดข้อสอบ (เก็บใน META.icons / META.colors) =====
+let ST={icons:{},colors:{}},ST0='';
+const stHex=c=>/^#[0-9a-f]{6}$/i.test(String(c))?c:'#6c5ce7';
+function stRow(k){const ic=ST.icons[k]||IC0[k],cl=ST.colors[k]||CL0[k];
+ return `<div class="cmr"><span id="st${k}" class="ic" style="width:40px;height:40px;font-size:1.2rem;border-radius:12px;background:${stHex(cl)}22">${escH(ic)}</span><span class="cmn">${escH(S[k].replace(/^ภาษาไทย · /,''))}</span><input class="aqi" style="width:58px;margin:0;text-align:center;padding:8px 4px" maxlength="4" value="${escH(ic)}" aria-label="ไอคอน" oninput="stI(${k},this.value)"><input type="color" class="aqi" style="width:46px;height:40px;margin:0;padding:2px" value="${stHex(cl)}" aria-label="สี" oninput="stC(${k},this.value)"></div>`}
+function stU(k){const e=document.getElementById('st'+k);if(!e)return;e.textContent=ST.icons[k]||IC0[k];e.style.background=stHex(ST.colors[k]||CL0[k])+'22'}
+function stI(k,v){v=String(v).trim();if(!v||v===IC0[k])delete ST.icons[k];else ST.icons[k]=v;stU(k)}
+function stC(k,v){if(String(v).toLowerCase()===String(CL0[k]).toLowerCase())delete ST.colors[k];else ST.colors[k]=v;stU(k)}
+async function styleSets(){
+ ST={icons:Object.assign({},MT.icons||{}),colors:Object.assign({},MT.colors||{})};ST0=JSON.stringify(ST);
+ const has=Object.keys(MT.icons||{}).length||Object.keys(MT.colors||{}).length;
+ const r=await Swal.fire({title:'🎨 ไอคอนและสีของชุดข้อสอบ',width:640,showCancelButton:true,showDenyButton:!!has,confirmButtonText:'บันทึก',denyButtonText:'คืนค่าเดิมทั้งหมด',cancelButtonText:'ยกเลิก',focusConfirm:false,
+  html:'<div class="m" style="margin-bottom:6px">พิมพ์อีโมจิ/ตัวอักษรช่องแรก แล้วแตะช่องสีเพื่อเลือกสี · สีใช้กับพื้นไอคอนและแถบความคืบหน้า</div><div style="text-align:left;max-height:58vh;overflow:auto">'+catList().map(c=>c.sets.length?'<h2>'+(c.icon?escH(c.icon)+' ':'')+escH(c.name)+'</h2>'+c.sets.map(stRow).join(''):'').join('')+'</div>',
+  preConfirm:()=>{if(JSON.stringify(ST)===ST0){Swal.showValidationMessage('ยังไม่ได้แก้ไขอะไร');return false}return{icons:Object.assign({},ST.icons),colors:Object.assign({},ST.colors)}}});
+ if(r.isConfirmed)saveMeta({names:MT.names||{},order:MT.order||[],icons:r.value.icons,colors:r.value.colors},'แก้ไขไอคอนและสีของชุดข้อสอบ');
+ else if(r.isDenied&&await cf('คืนค่าไอคอนและสีเดิม?','ทุกชุดจะกลับไปใช้ไอคอนและสีตั้งต้น','คืนค่า','warning'))saveMeta({names:MT.names||{},order:MT.order||[],icons:{},colors:{}},'คืนค่าไอคอนและสีของชุดข้อสอบ')}
+// ===== หน้าเฉลยทั้งหมด =====
+let ASH=ld('ktash',1);
+function ansHome(){stop();
+ A.innerHTML=`<div class="top"><button class="ib" onclick="home()">← กลับ</button><b style="flex:1">📖 เฉลยทั้งหมด</b></div><div class="m" style="margin:4px 2px 0">เลือกชุดข้อสอบ เพื่อดูโจทย์ ตัวเลือก และเฉลยทุกข้อ</div>`
+ +catList().map(c=>c.sets.length?`<h2>${c.icon?escH(c.icon)+' ':''}${escH(c.name)} <span class="m">· ${c.sets.length} ชุด</span></h2>`+c.sets.map(k=>`<button class="sub fade" onclick="ansSet(${k})"><span class="ic" style="background:${CL[k]}22">${IC[k]}</span><span style="flex:1"><b>${escH(S[k].replace(/^ภาษาไทย · /,''))}</b><span class="m">${ids(j=>Q[j][0]==k).length} ข้อ</span></span><span class="m" style="font-size:1.4rem">›</span></button>`).join(''):'').join('');
+ scrollTo(0,0)}
+function ansSet(k){stop();const a=ids(j=>Q[j][0]==k);
+ A.innerHTML=`<div class="top"><button class="ib" onclick="ansHome()">← เฉลย</button><b style="flex:1;font-size:.95rem;line-height:1.3">${IC[k]} ${escH(S[k].replace(/^ภาษาไทย · /,''))}</b><button class="ib" style="font-size:.8rem" onclick="ansTog(${k})">${ASH?'🙈 ซ่อนเฉลย':'👁 แสดงเฉลย'}</button></div><div class="m" style="margin:2px 2px 6px">${a.length} ข้อ${ASH?' · ตัวเลือกที่ถูกต้องทำเครื่องหมายสีเขียว':' · ซ่อนเฉลยอยู่ ลองคิดก่อนแล้วค่อยกดแสดง'}</div>`
+ +a.map((j,n)=>{const q=Q[j];return `<div class="card"><div class="q"><span class="m">ข้อ ${n+1}</span><br>${q[1]}</div>`+q[2].map((o,x)=>`<div class="ao${ASH&&x===q[3]?' hit':''}"><span class="l">${L[x]}</span><span style="flex:1">${o}</span>${ASH&&x===q[3]?'<b style="color:var(--ok)">✓</b>':''}</div>`).join('')+(ASH?`<div class="m" style="margin-top:6px">เฉลย: <b style="color:var(--ok)">${L[q[3]]}</b></div>`:'')+`</div>`}).join('')
+ +`<button class="btn" onclick="ansHome()">← กลับไปเลือกชุดอื่น</button>`;scrollTo(0,0)}
+function ansTog(k){ASH=ASH?0:1;sv('ktash',ASH);const y=scrollY;ansSet(k);scrollTo(0,y)}
+function help(){const H=`<div style="text-align:left;font-size:.95rem;line-height:1.7"><b>⚡ เฉลยทันที</b> เห็นผลถูก/ผิดทันทีที่ตอบ<br><b>📝 เฉลยท้ายชุด</b> ทำให้ครบแล้วค่อยดูผลรวม<br><b>▦</b> ดูทุกข้อ กระโดดไปข้อไหนก็ได้<br><b>☆</b> บันทึกข้อที่อยากทบทวนทีหลัง<br><b>เจาะข้อที่ยังไม่เคยถูก</b> ฝึกเฉพาะข้อที่ยังพลาดอยู่<br><br><span class="m">ความคืบหน้าเก็บในเครื่องนี้ (เบราว์เซอร์) เท่านั้น</span></div>`;return window.Swal?Swal.fire({title:'📖 วิธีใช้งาน',html:H,confirmButtonText:'เข้าใจแล้ว'}):al('วิธีใช้งาน','เฉลยทันที / เฉลยท้ายชุด / ▦ ดูทุกข้อ / ☆ บันทึกข้อ')}
+async function resetData(){
+if(!window.Swal){if(confirm('ล้างความคืบหน้าและข้อที่บันทึกทั้งหมด?')){M=new Set();BK=new Set();sv('ktm',[]);sv('ktbk',[]);home()}return}
+const r=await Swal.fire({title:'รีเซ็ตข้อมูล',html:'เลือกสิ่งที่ต้องการล้าง<br><span class="m">ทำแล้วย้อนกลับไม่ได้</span>',icon:'warning',showCancelButton:true,showDenyButton:true,confirmButtonText:'ล้างความคืบหน้า',denyButtonText:'ล้างข้อที่บันทึก ⭐',cancelButtonText:'ยกเลิก',reverseButtons:true,focusCancel:true});
+if(r.isConfirmed){const ok=await cf('ล้างความคืบหน้าทั้งหมด?',`ข้อที่ทำถูกแล้ว ${M.size} ข้อ จะถูกรีเซ็ต`,'ล้างเลย','warning');if(ok){M=new Set();sv('ktm',[]);home();toast('ล้างความคืบหน้าแล้ว')}}
+else if(r.isDenied){const ok=await cf('ล้างข้อที่บันทึกทั้งหมด?',`ข้อที่บันทึกไว้ ${BK.size} ข้อ จะถูกลบ`,'ล้างเลย','warning');if(ok){BK=new Set();sv('ktbk',[]);home();toast('ล้างข้อที่บันทึกแล้ว')}}}
+function home(){stop();const pc=Math.round(M.size/Q.length*100),wr=ids(k=>!M.has(k)).length;
+A.innerHTML=`<div class="syx sypill" data-full="0"></div><div class="hero fade"><div style="flex:1"><h1>ฝึกทำข้อสอบ<br>ครูผู้ช่วย</h1><p>คลังข้อสอบ · ${Q.length} ข้อ · ทำถูกแล้ว ${M.size} ข้อ</p></div><div class="rg" style="background:conic-gradient(#fff ${pc*3.6}deg,rgba(255,255,255,.25) 0)"><div><span>${pc}%<small>เก่งแล้ว</small></span></div></div></div>
+<div class="segrow"><div class="seg"><button class="${mode=='now'?'on':''}" onclick="setMode('now')">⚡ เฉลยทันที</button><button class="${mode=='end'?'on':''}" onclick="setMode('end')">📝 เฉลยท้ายชุด</button></div><button class="ansb" onclick="ansHome()" aria-label="ดูเฉลยทั้งหมด"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg><span>เฉลย</span></button></div>
+<div class="q3"><button class="go" onclick="go(ids(()=>1),20)"><b>20</b><span>${I.shufS}สุ่มเร็ว</span></button><button class="go" onclick="go(ids(()=>1),40)"><b>40</b><span>${I.shufS}สุ่มกลาง</span></button><button class="go" onclick="go(ids(()=>1),60)"><b>60</b><span>${I.shufS}สุ่มเต็ม</span></button></div>
+<button class="long" onclick="cust()"><span class="ic" style="background:linear-gradient(135deg,#6c5ce7,#a78bfa);color:#fff;border:0">${I.shuf}</span><span><b>สุ่มเลือกวิชาเอง</b><br><span class="m">เลือกกี่ชุดก็ได้ · กำหนดจำนวนข้อเอง</span></span></button>
+<button class="long" onclick="go(ids(k=>!M.has(k)),30)" ${wr?'':'disabled'}><span class="ic" style="background:linear-gradient(135deg,#ff6b4a,#ffa94d);color:#fff;border:0">${I.dice}</span><span><b>เจาะข้อที่ยังไม่เคยถูก</b><br><span class="m">เหลือ ${wr} ข้อ</span></span></button>
+<button class="long" onclick="go([...BK])" ${BK.size?'':'disabled'}><span class="ic" style="background:#d99a0022">⭐</span><span><b>ทบทวนข้อที่บันทึกไว้</b><br><span class="m">${BK.size} ข้อ</span></span></button>
+`+chipBar()+catList().map((c,ci)=>CF=='all'||CF==c.id?catSec(c,ci):'').join('')+`<button class="long" onclick="manage()"><span class="ic" style="background:#22d3ee22">⚙️</span><span><b>การจัดการ</b><br><span class="m">เพิ่ม/ลบ/เปลี่ยนชื่อ/จัดหมวดหมู่/จัดลำดับ · ต้องใส่รหัส 6 หลัก</span></span></button><div style="display:flex;gap:10px;margin-top:22px"><button class="btn" style="margin:0" onclick="help()">📖 วิธีใช้</button><button class="btn" style="margin:0;color:var(--no)" onclick="resetData()">🗑️ รีเซ็ตข้อมูล</button></div>`;syPaint()}
+function applyPD(p,boot){if(!p||!Array.isArray(p.nw))return;
+ const f=j=>p.nw[j]===undefined?-1:p.nw[j],g=j=>j<p.k?j:j>p.k?j-1:-1;
+ M=new Set([...M].map(f).filter(j=>j>=0));BK=new Set([...BK].map(f).filter(j=>j>=0));
+ if(boot)sv('ktcs',ld('ktcs',[]).map(g).filter(j=>j>=0));else{cs=new Set([...cs].map(g).filter(j=>j>=0));sv('ktcs',[...cs])}
+ sv('ktm',[...M]);sv('ktbk',[...BK]);
+ try{localStorage.removeItem('ktpd')}catch(e){}}
+(function(){const p=ld('ktpd',null);if(!p||S.length>=p.len)return;applyPD(p,true)})();
+let cs=new Set(ld('ktcs',[]).filter(k=>k<S.length)),cn=ld('ktcn',40);
+const CNT=S.map((s,k)=>Q.filter(q=>q[0]==k).length);
+function rebuildAll(){buildData();CNT.length=0;S.forEach((s,k)=>CNT.push(Q.filter(q=>q[0]==k).length));cs=new Set([...cs].filter(k=>k<S.length))}
+function cust(){stop();
+A.innerHTML=`<div class="top"><button class="ib" onclick="home()">← กลับ</button><b style="flex:1">${I.shufS} สุ่มเลือกวิชาเอง</b></div><div class="m" style="margin:4px 2px 0">เลือกกี่ชุดก็ได้ แล้วกำหนดจำนวนข้อที่จะสุ่ม</div>`+catList().map((c,ci)=>`<div class="gh"><h2>${c.icon?escH(c.icon)+' ':''}${escH(c.name)}</h2><button class="ib" onclick="tgc(${ci})">เลือก/ล้างทั้งหมวด</button></div>`+c.sets.map(k=>{const s=S[k];return `<button class="opt${cs.has(k)?' on':''}" id="cs${k}" onclick="tg(${k})"><span class="l">${cs.has(k)?'✓':''}</span><span>${s.replace(/^ภาษาไทย · /,'')}<br><span class="m">${CNT[k]} ข้อ</span></span></button>`}).join('')).join('')+`<div style="height:80px"></div><div class="dock"><div style="flex-direction:column"><div class="cn">${[20,40,60,100].map(n=>`<button id="cc${n}" onclick="sc(${n})">${n}</button>`).join('')}<input id="cni" type="number" inputmode="numeric" min="1" max="999" value="${cn}" aria-label="จำนวนข้อ" oninput="sc(this.value,1)"></div><span class="m" id="cs-sum" style="text-align:center"></span><button class="pri" id="cs-go" onclick="st()"></button></div></div>`;sm();scrollTo(0,0)}
+function pt(k){const e=document.getElementById('cs'+k);if(!e)return;e.classList.toggle('on',cs.has(k));e.firstChild.textContent=cs.has(k)?'✓':''}
+function sm(){const X=[...cs].reduce((a,k)=>a+CNT[k],0),n=Math.min(cn,X),g=document.getElementById('cs-go');
+document.getElementById('cs-sum').textContent=cs.size?`เลือก ${cs.size} ชุด · มีทั้งหมด ${X} ข้อ`+(cn>X?' (ไม่ถึงจำนวนที่ต้องการ จะสุ่มทั้งหมด)':''):'ยังไม่ได้เลือกชุดข้อสอบ';
+g.textContent=`เริ่มสุ่ม ${n} ข้อ`;g.disabled=!(cs.size&&cn>0);
+[20,40,60,100].forEach(v=>document.getElementById('cc'+v).classList.toggle('on',cn==v));sv('ktcs',[...cs]);sv('ktcn',cn)}
+function tg(k){cs.has(k)?cs.delete(k):cs.add(k);pt(k);sm()}
+function tgc(ci){const r=(catList()[ci]||{sets:[]}).sets,all=r.length&&r.every(k=>cs.has(k));r.forEach(k=>{all?cs.delete(k):cs.add(k);pt(k)});sm()}
+function sc(v,fi){cn=Math.max(0,Math.min(999,parseInt(v)||0));if(!fi)document.getElementById('cni').value=cn;sm()}
+function st(){if(!cs.size){al('ยังไม่ได้เลือกชุดข้อสอบ','แตะเลือกอย่างน้อย 1 ชุดก่อนนะครับ','warning');return}
+const a=ids(j=>cs.has(Q[j][0]));if(cn>a.length)toast(`มีแค่ ${a.length} ข้อ จะสุ่มทั้งหมด`,'info');go(a,cn)}
+let ORD=false;
+function go(a,n,ordered){if(!a.length){al('ไม่มีข้อสอบให้ทำ','ลองเลือกชุดอื่นดูนะครับ','info');return}ORD=!!ordered;qs=(ordered?[...a].sort((x,y)=>x-y):sh(a)).slice(0,n||999);an=[];i=0;pal=0;t0=Date.now();stop();tm=setInterval(()=>{const e=document.getElementById('tm');if(e)e.textContent=mmss(Math.floor((Date.now()-t0)/1000))},1000);show()}
+function show(){const id=qs[i],q=Q[id],a=an[i],lock=mode=='now'&&a!=null,last=i==qs.length-1;
+A.innerHTML=`<div class="top"><button class="ib" aria-label="ออกจากข้อสอบ" onclick="quit()">✕ ออก</button><div class="bar"><i style="width:${(i+1)/qs.length*100}%"></i></div><span class="m" id="tm">${mmss(Math.floor((Date.now()-t0)/1000))}</span><button class="ib" aria-label="ดูทุกข้อ" onclick="pal=1;show()">▦</button></div>
+<div class="fade"><div class="card"><div class="qn"><span class="tag" style="background:${CL[q[0]]}">${IC[q[0]]} ${S[q[0]]}</span><button class="ib" aria-label="บันทึกข้อนี้" onclick="bk(${id})">${BK.has(id)?'⭐':'☆'}</button></div><div class="m">ข้อ ${i+1} จาก ${qs.length}</div><div class="q">${q[1]}</div></div>`+q[2].map((c,k)=>{let cl=a===k?' on':'';if(lock)cl=k==q[3]?' ok':a===k?' bad':'';return `<button class="opt${cl}" ${lock?'disabled':''} onclick="pick(${k})"><span class="l">${L[k]}</span><span>${c}</span></button>`}).join('')+`</div><div class="dock"><div><button onclick="mv(-1)" ${i?'':'disabled'}>←</button>${last?`<button class="pri" onclick="end()">ส่งและดูผล ✓</button>`:`<button class="pri" onclick="mv(1)">ถัดไป →</button>`}</div></div>`+(pal?`<div class="pal" onclick="pal=0;show()"><div onclick="event.stopPropagation()"><b>ข้อทั้งหมด</b> <span class="m">แตะเพื่อกระโดดไปข้อนั้น</span><div class="nv"><button class="btn" onclick="pal=0;quit()">📚 เลือกข้อสอบชุดใหม่</button></div><div class="g">${qs.map((x,k)=>{const r=an[k];let c=r==null?'':mode=='now'?(r===Q[x][3]?'ok':'bad'):'d';return `<button class="${c}${k==i?' cur':''}" onclick="i=${k};pal=0;show()">${k+1}</button>`}).join('')}</div></div></div>`:'')}
+async function quit(){const u=qs.length-an.filter(x=>x!=null).length;if(await cf('ออกจากข้อสอบ?',u?`ยังไม่ได้ตอบ ${u} ข้อ ผลที่ทำไปจะไม่ถูกบันทึก`:'','ออกเลย','warning'))home()}
+function bk(id){const had=BK.has(id);had?BK.delete(id):BK.add(id);sv('ktbk',[...BK]);show();toast(had?'ยกเลิกการบันทึกแล้ว':'บันทึกข้อนี้แล้ว ⭐',had?'info':'success')}
+function pick(k){an[i]=k;if(mode=='now'&&k===Q[qs[i]][3]){M.add(qs[i]);sv('ktm',[...M])}show()}
+function mv(d){i+=d;show();scrollTo(0,0)}
+async function end(){const u=qs.length-an.filter(x=>x!=null).length;if(u&&!await cf('ส่งข้อสอบเลยไหม?',`ยังไม่ได้ตอบ ${u} ข้อ`,'ส่งเลย','warning'))return;stop();tt=Math.floor((Date.now()-t0)/1000);
+qs.forEach((x,k)=>{if(an[k]===Q[x][3])M.add(x)});sv('ktm',[...M]);flt=0;rev();done()}
+function wrongOnly(){const w=qs.filter((x,k)=>an[k]!==Q[x][3]);if(!w.length){al('ไม่มีข้อผิดเลย 🎉','ชุดนี้ถูกครบทุกข้อแล้ว','success');return}go(w,0,ORD);toast(`ทบทวนข้อที่ผิด ${w.length} ข้อ`,'info')}
+function done(){const n=qs.length,r=qs.filter((x,k)=>an[k]===Q[x][3]).length,pc=Math.round(r/n*100);
+if(!window.Swal)return;Swal.fire({icon:pc>=60?'success':'warning',title:pc==100?'เต็ม 100%! 🏆':pc>=80?'เยี่ยมมาก! 🎉':pc>=60?'ผ่านเกณฑ์แล้ว 👍':'อีกนิดเดียว 💪',html:`<div style="font-size:2.4rem;font-weight:700;font-family:Prompt,sans-serif;background:linear-gradient(135deg,var(--p),var(--a));-webkit-background-clip:text;background-clip:text;color:transparent">${pc}%</div><div>ถูก ${r} จาก ${n} ข้อ · เวลา ${mmss(tt)}</div>`,confirmButtonText:'ดูเฉลย'})}
+function rev(){const r=qs.filter((x,k)=>an[k]===Q[x][3]).length,n=qs.length,pc=Math.round(r/n*100),col=pc>=60?'var(--ok)':'var(--no)',msg=pc>=80?'เยี่ยมมาก! 🎉':pc>=60?'ผ่านเกณฑ์แล้ว 👍':'อีกนิดเดียว สู้ต่อ 💪';
+A.innerHTML=`<div class="card res fade"><div class="rg" style="background:conic-gradient(${col} ${pc*3.6}deg,var(--b) 0)"><div><span>${pc}%<small>${r}/${n} ข้อ</small></span></div></div><b>${msg}</b><div class="st"><div><b class="ok">${r}</b><span class="m">ถูก</span></div><div><b class="no">${n-r}</b><span class="m">ผิด/ว่าง</span></div><div><b>${mmss(tt)}</b><span class="m">เวลา</span></div></div></div>
+<button class="btn pri" onclick="go(qs.slice(),0,ORD)">ทำชุดนี้ใหม่ 🔄</button><button class="btn" onclick="wrongOnly()">ทำเฉพาะข้อที่ผิด</button><button class="btn" onclick="home()">📚 เลือกข้อสอบชุดใหม่</button>
+<div class="tabs">${['ทั้งหมด','เฉพาะข้อผิด','⭐ บันทึก'].map((t,k)=>`<button class="${flt==k?'on':''}" onclick="flt=${k};rev()">${t}</button>`).join('')}</div>`+qs.map((x,k)=>{const q=Q[x],ok=an[k]===q[3];if(flt==1&&ok||flt==2&&!BK.has(x))return'';return `<div class="card"><b>${k+1}. ${q[1]}</b> <span class="${ok?'ok':'no'}">${ok?'✓ ถูก':'✗ ผิด'}</span><div class="m" style="margin:2px 0 6px">${S[q[0]]}</div>`+q[2].map((c,j)=>`<div class="rv${j===q[3]?' a':''}${j===an[k]&&!ok?' w':''}">${L[j]}) ${c}${j===q[3]?' ✓':''}${j===an[k]&&!ok?' · ที่คุณเลือก':''}</div>`).join('')+`</div>`}).join('');scrollTo(0,0)}
+home();
+if(!ld('ktwelcome',0)){sv('ktwelcome',1);setTimeout(help,400)}
+</script></body></html>
